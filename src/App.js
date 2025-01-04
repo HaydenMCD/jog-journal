@@ -1,10 +1,10 @@
-import './App.css';
+import "./css/App.css";
+import Header from "./components/Header.js"
 
 function App() {
   return (
     <div className="App">
-      <h1>Jog Journal</h1>
-      <p>Your companion for tracking every step towards your yearly goal.</p>
+      <Header />
     </div>
   );
 }
