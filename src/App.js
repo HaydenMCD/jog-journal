@@ -1,12 +1,16 @@
 import "./css/App.css";
-import Header from "./components/Header.js"
+import Header from "./components/Header.js";
 import Tracker from "./components/Tracker.js";
+import KilometerInput from "./components/KilometerInput.js";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Tracker />
+      <div className="wrapper">
+      <KilometerInput />
+      </div>
+
     </div>
   );
 }
