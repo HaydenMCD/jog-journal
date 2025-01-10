@@ -1,6 +1,18 @@
 .kilometerContainer {
   width: 33%;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+  gap: 50px;
+}
+
+.inputTitle {
+    font-size: 34px;
+    margin: 0;
+    padding-bottom: 50px;
 }
 
 .counterInput {
@@ -20,8 +32,21 @@ button {
   border-radius: 4px;
   background-color: #00c7c763;
   color: white;
+  min-width: 32px;
+  height: 100%
 }
 
 button:active {
-  background-color: #0056b3;
+  background-color: #00bebea9;
+}
+
+.submitButton {
+  margin-top: 10px;
+  background-color: #00c7c763;
+  width: 60%;
+  padding: 10px;
+}
+
+.submitButton:active {
+  background-color: #00bebea9;
 }
