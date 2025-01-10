@@ -1,0 +1,27 @@
+.kilometerContainer {
+  width: 33%;
+  padding: 10px;
+}
+
+.counterInput {
+  width: 200px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #00c7c763;
+  color: white;
+}
+
+button:active {
+  background-color: #0056b3;
+}
