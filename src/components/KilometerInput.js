@@ -9,18 +9,23 @@ const KilometerInput = () => {
   const increase = () => setKmCount(kmCount + 1);
   const decrease = () => setKmCount(kmCount - 1);
 
-  const year = new Date().getFullYear();
+  const year = new Date().getFullYear(); // Gets current year for naming the collection
 
-  const collectionRef = collection(firestore, `${year} Runs`);
+  const collectionRef = collection(firestore, `${year} runs`); // Creates collection if one doesnt exist
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-
     try {
-      addDoc(collectionRef, { Kilometers: kmCount, date: Timestamp.now() });
+      // Quick fix for negative or 0 kilometers being entered.
+      if (kmCount <= 0) {
+        alert("Cannot add 0 or negative number");
+      } else {
+        addDoc(collectionRef, { Kilometers: kmCount, date: Timestamp.now() }); // Adds kilometers ran and date to collection.
+        console.log("Run successfuly added");
+      }
     } catch (e) {
-      console.log(e);
+      console.log("Error adding run: ", e);
     }
+    setKmCount(0);
   };
 
   return (
