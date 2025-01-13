@@ -9,6 +9,7 @@ function App() {
       <Header />
       <div className="wrapper">
       <KilometerInput />
+      <Tracker />
       </div>
 
     </div>
