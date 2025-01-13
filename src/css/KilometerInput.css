@@ -1,5 +1,5 @@
 .kilometerContainer {
-  width: 33%;
+  min-width: 33%;
   padding: 10px;
   display: flex;
   flex-direction: column;
