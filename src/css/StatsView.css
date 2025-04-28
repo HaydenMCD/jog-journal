@@ -1,0 +1,15 @@
+.stats-wrapper {
+  min-width: 67%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CSS for progress bar placeholder from the ProgressBar component */
+.progress-placeholder {
+  margin-top: 50px;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: red;
+  border-radius: 50%;
+}

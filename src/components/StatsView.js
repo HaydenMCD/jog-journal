@@ -1,5 +1,6 @@
 import React from "react";
-import "../css/Tracker.css";
+import "../css/StatsView.css";
+import ProgressBar from "./ProgressBar";
 
 var today = new Date(); // Gets todays date
 
@@ -19,10 +20,11 @@ var currentDay = Math.floor(diff / oneDay);
 
 var daysLeft = 365 - currentDay;
 
-const Tracker = () => {
+const StatsView = () => {
   return (
     <>
-      <div className="tracker-wrapper">
+      <div className="stats-wrapper">
+        <ProgressBar />
         <p>Current day: {currentDay}</p>
         <p>Days left: {daysLeft}</p>
       </div>
@@ -30,4 +32,4 @@ const Tracker = () => {
   );
 };
 
-export default Tracker;
+export default StatsView;
