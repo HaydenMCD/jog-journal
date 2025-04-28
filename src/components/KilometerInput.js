@@ -1,26 +1,43 @@
 import React, { useState } from "react";
 import "../css/KilometerInput.css";
+import { firestore } from "../firebase";
+import { Timestamp, addDoc, collection } from "firebase/firestore";
 
 const KilometerInput = () => {
-  const [count, setCount] = useState(0);
+  const [kmCount, setKmCount] = useState(0);
 
-  const increase = () => setCount(count + 1);
-  const decrease = () => setCount(count - 1);
+  const increase = () => setKmCount(kmCount + 1);
+  const decrease = () => setKmCount(kmCount - 1);
 
-  const handleSubmit = () => {
-    window.location.reload(false);
+  const year = new Date().getFullYear(); // Gets current year for naming the collection
+
+  const collectionRef = collection(firestore, `${year} runs`); // Creates collection if one doesnt exist
+
+  const handleSubmit = async (e) => {
+    try {
+      // Quick fix for negative or 0 kilometers being entered.
+      if (kmCount <= 0) {
+        alert("Cannot add 0 or negative number");
+      } else {
+        addDoc(collectionRef, { Kilometers: kmCount, date: Timestamp.now() }); // Adds kilometers ran and date to collection.
+        console.log("Run successfuly added");
+      }
+    } catch (e) {
+      console.log("Error adding run: ", e);
+    }
+    setKmCount(0);
   };
 
   return (
     <div className="kilometerContainer">
-        <p className="inputTitle">Enter your kilometers ran today</p>
+      <p className="inputTitle">Enter your kilometers ran today</p>
       <form className="counterForm" onSubmit={handleSubmit}>
         <button className="decreaseButton" type="button" onClick={decrease}>
           -
         </button>
         <input
           type="text"
-          value={count}
+          value={kmCount}
           readOnly
           className="counterInput"
           aria-label="numberInput"
