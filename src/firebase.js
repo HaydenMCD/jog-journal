@@ -3,12 +3,11 @@ import { getFirestore } from "@firebase/firestore";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIRESTORE,
-  authDomain: "jog-journal-c324d.firebaseapp.com",
-  projectId: "jog-journal-c324d",
-  storageBucket: "jog-journal-c324d.firebasestorage.app",
-  messagingSenderId: "726856946108",
-  appId: "1:726856946108:web:3c08008132a09d875f1bb9",
-  measurementId: "G-0RRFJZLBTE",
+  authDomain: "jogjournal.firebaseapp.com",
+  projectId: "jogjournal",
+  storageBucket: "jogjournal.firebasestorage.app",
+  messagingSenderId: "352937565243",
+  appId: "1:352937565243:web:bf7f6edb57a0fc5566101e",
 };
 
 // Initialize Firebase
