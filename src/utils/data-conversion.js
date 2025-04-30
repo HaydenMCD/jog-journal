@@ -1,4 +1,4 @@
-import { KILOMETERS, MILES } from "./constants";
+import { CONVERSION_TO_KILOMETERS, CONVERSION_TO_MILES } from "./constants";
 
 /**
  * 
@@ -7,7 +7,7 @@ import { KILOMETERS, MILES } from "./constants";
  * @returns number converted to kilometers
  */
 export function convertMilesToKilometers (miles) {
-  return miles * KILOMETERS;
+  return miles * CONVERSION_TO_KILOMETERS;
 }
 
 /**
@@ -17,5 +17,5 @@ export function convertMilesToKilometers (miles) {
  * @returns number converted to miles
  */
 export function convertKilometersToMiles (kilometers) {
-    return kilometers * MILES;
+    return kilometers * CONVERSION_TO_MILES;
 }
