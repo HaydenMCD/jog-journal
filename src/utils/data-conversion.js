@@ -7,7 +7,7 @@ import { KILOMETERS, MILES } from "./constants";
  * @returns number converted to kilometers
  */
 export function convertMilesToKilometers (miles) {
-  return miles * 1.60934;
+  return miles * KILOMETERS;
 }
 
 /**
@@ -17,5 +17,5 @@ export function convertMilesToKilometers (miles) {
  * @returns number converted to miles
  */
 export function convertKilometersToMiles (kilometers) {
-    return kilometers / 1.60934;
+    return kilometers * MILES;
 }
