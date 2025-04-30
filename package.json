@@ -1,7 +1,9 @@
 {
   "name": "jog-journal",
   "version": "0.1.0",
+  "description": "A simple jog journal app to track your runs and progress over time.",
   "private": true,
+  "license": "MIT",
   "engineStrict": false,
   "engines": {
     "node": ">=22.0.0",
@@ -10,6 +12,12 @@
   "author": {
     "name": "Hayden McDowall",
     "email": "haysay424@gmail.com"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "cra-template": "1.2.0",
@@ -20,11 +28,8 @@
     "react-router-dom": "^6.18.0",
     "web-vitals": "^4.2.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "eslint": "^9.25.1"
   },
   "eslintConfig": {
     "extends": [
@@ -43,8 +48,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint": "^9.25.1"
   }
 }
