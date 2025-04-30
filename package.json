@@ -2,6 +2,15 @@
   "name": "jog-journal",
   "version": "0.1.0",
   "private": true,
+  "engineStrict": false,
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=11.0.0"
+  },
+  "author": {
+    "name": "Hayden McDowall",
+    "email": "haysay424@gmail.com"
+  },
   "dependencies": {
     "cra-template": "1.2.0",
     "firebase": "^11.1.0",
