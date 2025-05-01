@@ -20,7 +20,11 @@ export const MILISECONDS_IN_HOUR = 3600000;
 /*                        Constants for reducer actions                       */
 /* -------------------------------------------------------------------------- */
 
-// Action type for adding distance as miles
-export const SET_MILES = ["SET_MILES", CONVERSION_TO_MILES];
-// Action type for adding distance as kilometers
-export const SET_KILOMETERS = ["SET_KILOMETERS", CONVERSION_TO_KILOMETERS];
+// Action typeS for adding distance as miles OR kilometers
+export const DISTANCE_REDUCER = {
+  MILES: { SET_MILES: 'SET_MILES', ROC: CONVERSION_TO_MILES },
+  KILOMETERS: {
+    SET_KILOMETERS: 'SET_KILOMETERS',
+    ROC: CONVERSION_TO_KILOMETERS,
+  },
+};
