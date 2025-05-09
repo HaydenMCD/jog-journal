@@ -1,9 +1,11 @@
+import { memo } from 'react';
+
 /**
- * 
- * @param {boolean} kilometersOn - true kilometers is selected, false miles is selected 
+ *
+ * @param {boolean} kilometersOn - true kilometers is selected, false miles is selected
  */
 
-export const DistanceCheckBox = (kilometersOn) => {
+const DistanceCheckBox = memo(function DistanceCheckBox(kilometersOn) {
   return (
     <form>
       <label htmlFor={kilometersOn ? 'kilometers' : 'miles'}>
@@ -17,4 +19,6 @@ export const DistanceCheckBox = (kilometersOn) => {
       />
     </form>
   );
-};
+});
+
+export default DistanceCheckBox;
