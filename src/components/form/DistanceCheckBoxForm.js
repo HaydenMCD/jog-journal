@@ -9,13 +9,11 @@
 function DistanceCheckBox(kilometersOn, setKilometersOn, distanceType) {
   return (
     <form>
-      <label htmlFor={distanceType}>
-        {distanceType}
-      </label>
+      <label htmlFor={distanceType}>{distanceType}</label>
       <input
         type={'checkbox'}
-        defaultChecked={ kilometersOn }
-        name={ 'distanceType' }
+        defaultChecked={kilometersOn}
+        name={'distanceType'}
         onChange={(e) => {
           setKilometersOn(e.target.checked);
         }}
