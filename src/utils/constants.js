@@ -7,6 +7,17 @@ export const CONVERSION_TO_MILES = 0.621371;
 // Conversion factor from miles to kilometers
 export const CONVERSION_TO_KILOMETERS = 1.60934;
 
+export const DISTANCE_TYPES = {
+  MILES: {
+    NAME: 'Miles',
+    ROC: CONVERSION_TO_MILES,
+  },
+  KILOMETERS: {
+    NAME: 'Kilometers',
+    ROC: CONVERSION_TO_KILOMETERS,
+  },
+};
+
 /* -------------------------------------------------------------------------- */
 /*                       Constants for time conversions                       */
 /* -------------------------------------------------------------------------- */
@@ -19,12 +30,3 @@ export const MILISECONDS_IN_HOUR = 3600000;
 /* -------------------------------------------------------------------------- */
 /*                        Constants for reducer actions                       */
 /* -------------------------------------------------------------------------- */
-
-// Action typeS for adding distance as miles OR kilometers
-export const DISTANCE_REDUCER = {
-  MILES: { SET_MILES: 'SET_MILES', ROC: CONVERSION_TO_MILES },
-  KILOMETERS: {
-    SET_KILOMETERS: 'SET_KILOMETERS',
-    ROC: CONVERSION_TO_KILOMETERS,
-  },
-};
