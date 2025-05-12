@@ -8,7 +8,11 @@ import {
 
 import { DISTANCE_TYPES } from '../utils/constants';
 
-const DistanceContext = createContext(null);
+export const DistanceContext = createContext({
+    kilometersOn: true,
+    distanceType: DISTANCE_TYPES.KILOMETERS.NAME,
+    toggleKilometers: () => {},
+});
 
 export function DistanceProvider({ children }) {
   const [kilometersOn, setKilometersOn] = useState(true);
@@ -31,20 +35,19 @@ export function DistanceProvider({ children }) {
       distanceType,
       toggleKilometers,
     }),
-    [kilometersOn, toggleKilometers]
+    [kilometersOn, toggleKilometers, distanceType]
   );
 
   return (
-    <DistanceContext.Provider distance={value}>
+    <DistanceContext.Provider
+      distanceType={value.distanceType}
+      kilometersOn={value.kilometersOn}
+      toggleKilometers={value.toggleKilometers}>
       {children}
     </DistanceContext.Provider>
   );
 }
 
-export const useDistance = () => {
-  const distance = useContext(DistanceContext);
-  if (!context) {
-    throw new Error('useDistance must be used within a DistanceProvider');
-  }
-  return distance;
+export const useDistanceValues = () => {
+  return useContext(DistanceContext);
 };
