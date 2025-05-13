@@ -1,15 +1,16 @@
 import { DistanceProvider } from "./hooks/useDistance";
 import "./css/App.css";
-import Header from "./components/Header.js";
-import StatsView from "./components/StatComponents/StatsView.js";
-import KilometerInput from "./components/KilometerInput.js";
+import Header from "./components/Header";
+import StatsView from "./components/StatComponents/StatsView";
+import KilometerInput from "./components/KilometerInput";
 
 function App () {
   return (
     <DistanceProvider>
     <div className="App">
       <Header />
-      <div className="wrapper">
+        <div className="wrapper">
+          test
         <KilometerInput />
         <StatsView />
       </div>
