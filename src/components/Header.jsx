@@ -1,9 +1,9 @@
-import { useDistanceValues } from '../hooks/useDistance';
-import DistanceCheckBox from './form/DistanceCheckBoxForm';
+import useDistanceValues from '../hooks/useDistanceValues';
+import DistanceCheckBox from './form/DistanceRadioButtonForm';
 import '../css/Header.css';
 
 const Header = () => {
-  const { kilometersOn, setKilometersOn, distanceType } = useDistanceValues();
+  const { distanceType, toggleKilometers } = useDistanceValues();
   return (
     <header className='header-wrapper'>
       <div>
@@ -14,8 +14,7 @@ const Header = () => {
       </div>
       <DistanceCheckBox
         distanceType={distanceType}
-        setKilometersOn={setKilometersOn}
-        kilometersOn={kilometersOn}
+        setKilometersOn={toggleKilometers}
       />
     </header>
   );
