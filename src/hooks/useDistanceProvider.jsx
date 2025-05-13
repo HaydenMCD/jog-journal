@@ -1,18 +1,7 @@
-import {
-  useContext,
-  createContext,
-  useState,
-  useMemo,
-  useCallback,
-} from 'react';
+import { useState, useMemo, useCallback } from 'react';
 
 import { DISTANCE_TYPES } from '../utils/constants';
-
-export const DistanceContext = createContext({
-    kilometersOn: true,
-    distanceType: DISTANCE_TYPES.KILOMETERS.NAME,
-    toggleKilometers: () => {},
-});
+import DistanceContext from './useDistanceContext';
 
 export function DistanceProvider({ children }) {
   const [kilometersOn, setKilometersOn] = useState(true);
@@ -39,15 +28,8 @@ export function DistanceProvider({ children }) {
   );
 
   return (
-    <DistanceContext.Provider
-      distanceType={value.distanceType}
-      kilometersOn={value.kilometersOn}
-      toggleKilometers={value.toggleKilometers}>
+    <DistanceContext.Provider value={value}>
       {children}
     </DistanceContext.Provider>
   );
 }
-
-export const useDistanceValues = () => {
-  return useContext(DistanceContext);
-};
