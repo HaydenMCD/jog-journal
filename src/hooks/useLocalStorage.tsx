@@ -1,26 +1,21 @@
 import { useState } from 'react';
 
-export const useLocalStorage = (key, initialValue) => {
-  const [storedValue, setStoredValue] = useState(() => {
-    try {
-      const item = window.localStorage.getItem(key);
-      return item ? JSON.parse(item) : initialValue;
-    } catch (error) {
-      console.error(error);
-      return initialValue;
-    }
-  });
+type LocalStorageKey = 'distanceType' | 'theme';
 
-  const setValue = (value) => {
-    try {
-      const valueToStore =
-        value instanceof Function ? value(storedValue) : value;
-      setStoredValue(valueToStore);
-      window.localStorage.setItem(key, JSON.stringify(valueToStore));
-    } catch (error) {
-      console.error(error);
-    }
+type StorageValueMap = {
+  distanceType: 'Kilometers' | 'Miles';
+  theme: 'light' | 'dark';
+};
+
+type StoredItem<T> = {
+  value: T;
+};
+
+export const useLocalStorage = (key: LocalStorageKey) => {
+  const setValue = (value: StoredItem<StorageValueMap>) => {
+    const storedValue = localStorage.getItem(key);
+    console.log(key);
   };
 
-  return [storedValue, setValue];
+  return { setValue };
 };
