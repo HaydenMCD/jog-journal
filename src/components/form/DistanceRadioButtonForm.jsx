@@ -2,15 +2,15 @@ import { DISTANCE_TYPES } from '../../utils/constants';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 /**
  *
- * @file DistanceCheckBoxForm.js
- * @typedef {Object} DistanceCheckBoxProps
+ * @file DistanceRadioButtonForm.jsx
+ * @typedef {Object} DistanceRadioButtonProps
  * @property {function} setKilometersOn - function to set kilometersOn
  * @property {('Kilometers' | 'Miles')} distanceType - type of distance | Kilometers or Miles
  */
 
 /**
  *
- * @param {DistanceCheckBoxProps} props - props for the component
+ * @param {DistanceRadioButtonProps} props - props for the component
  * @description A checkbox to select between kilometers and miles
  * @returns {JSX.Element}
  */
