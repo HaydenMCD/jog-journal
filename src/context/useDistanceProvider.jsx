@@ -28,7 +28,7 @@ export function DistanceProvider({ children }) {
   );
 
   return (
-    <DistanceContext.Provider value={value}>
+    <DistanceContext.Provider value={{...value}}>
       {children}
     </DistanceContext.Provider>
   );

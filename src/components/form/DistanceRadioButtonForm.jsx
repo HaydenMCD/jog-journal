@@ -21,8 +21,8 @@ function DistanceRadioButtonForm({ setKilometersOn, distanceType }) {
   // This is a placeholder and should be replaced with actual form submission logic
   // remove the local storage hook and use the form action to submit the changes when this is implemented
   return (
-    <form action={null}>
-      <label htmlFor={distanceType}>{distanceType}</label>
+    <form action={null} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingRight: '1rem' }}>
+      <label htmlFor={distanceType}>Distance Type: {distanceType}</label>
       <input
         type='radio'
         name='distanceType'

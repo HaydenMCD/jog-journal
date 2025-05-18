@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import DistanceContext from './useDistanceContext';
+import DistanceContext from '../context/useDistanceContext';
 
 const useDistanceValues = () => {
   const distanceValues = useContext(DistanceContext);
