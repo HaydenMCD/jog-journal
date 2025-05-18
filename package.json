@@ -9,10 +9,6 @@
     "node": ">=22.0.0",
     "npm": ">=11.0.0"
   },
-  "author": {
-    "name": "Hayden McDowall",
-    "email": "haysay424@gmail.com"
-  },
   "scripts": {
     "dev": "vite --port 3000",
     "build": "vite build",
