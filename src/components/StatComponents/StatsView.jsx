@@ -1,16 +1,16 @@
-import "../../css/StatsView.css";
-import { currentDay, daysLeft } from "../../utils/StatisticMath";
+import '../../css/StatsView.css';
+import { currentDay, daysLeft } from '../../utils/date-conversion';
 
 const StatsView = () => {
   return (
     <>
-      <div className="stats-wrapper">
+      <div className='stats-wrapper'>
         <p>Day: {currentDay}</p>
-        <div className="progress-placeholder">
+        <div className='progress-placeholder'>
           <p>Total kms</p>
           <p>% of target</p>
         </div>
-        <div className="stats-grid">
+        <div className='stats-grid'>
           <p>{daysLeft} days left</p>
           <p>Needed per day</p>
           <p>Daily average</p>
