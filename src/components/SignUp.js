@@ -1,7 +1,7 @@
-import { useState } from "react";
 import "../css/SignUp.css";
 
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+// For use later when implementing auth
+// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 const sendUserData = () => {
   window.location.reload();
@@ -14,22 +14,41 @@ const SignUp = () => {
         <div className="title">Sign Up</div>
         <div className="sub-title">login details:</div>
         <input
-          className="email-input"
           type="email"
+          className="email-input"
+          name="email-input"
           placeholder="Email"
           required
         ></input>
         <input
-          className="password-input"
           type="password"
+          className="password-input"
+          name="password-input"
           placeholder="Password"
           required
         ></input>
         <div className="sub-title">About you:</div>
-        <input className="name-input" type="text" placeholder="Name"></input>
-        <input className="dob-input" type="date" />
-        <input className="kg-input" type="number" placeholder="Weight in kg" />
-        <input className="submit" type="submit" onClick={sendUserData}></input>
+        <input
+          type="text"
+          className="name-input"
+          name="name-input"
+          placeholder="Name"
+          required
+        ></input>
+        <input type="date" className="dob-input" name="dob-input" required />
+        <input
+          type="number"
+          className="weight-input"
+          name="weight-input"
+          placeholder="Weight in kg"
+          required
+        />
+        <input
+          type="submit"
+          className="submit-btn"
+          name="submit-btn"
+          onClick={sendUserData}
+        ></input>
       </div>
     </form>
   );
