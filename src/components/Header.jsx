@@ -1,5 +1,5 @@
 import useDistanceValues from '../hooks/useDistanceValues';
-import DistanceCheckBox from './form/DistanceRadioButtonForm';
+import DistanceRadioButtonForm from './form/DistanceRadioButtonForm';
 import '../css/Header.css';
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
           Your companion for tracking every step towards your yearly goal.
         </h2>
       </div>
-      <DistanceCheckBox
+      <DistanceRadioButtonForm
         distanceType={distanceType}
         setKilometersOn={toggleKilometers}
       />
