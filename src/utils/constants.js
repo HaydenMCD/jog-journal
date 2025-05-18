@@ -22,6 +22,11 @@ export const DISTANCE_TYPES = {
 /*                       Constants for time conversions                       */
 /* -------------------------------------------------------------------------- */
 
+export const TODAYS_DATE = new Date(); // Gets today's date
+// Sets the beginning of the current year
+export const START_OF_YEAR = new Date(TODAYS_DATE.getFullYear(), 0, 0);
+// Sets the end of the current year
+export const THIS_YEAR = new Date().getFullYear();
 // Number of milliseconds in a day
 export const MILISECONDS_IN_DAY = 86400000;
 // Number of milliseconds in an hour
