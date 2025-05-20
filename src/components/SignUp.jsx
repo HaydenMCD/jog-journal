@@ -10,7 +10,7 @@ const sendUserData = () => {
 const SignUp = () => {
   return (
     <form>
-      <div className="login-container">
+      <div className="signup-container">
         <div className="title">Sign Up</div>
         <div className="sub-title">login details:</div>
         <input
