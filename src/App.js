@@ -1,6 +1,6 @@
 import "./css/App.css";
 import Header from "./components/Header.js";
-import StatsView from "./components/StatComponents/StatsView.js";
+import Tracker from "./components/Tracker.js";
 import KilometerInput from "./components/KilometerInput.js";
 
 function App() {
@@ -8,9 +8,10 @@ function App() {
     <div className="App">
       <Header />
       <div className="wrapper">
-        <KilometerInput />
-        <StatsView />
+      <KilometerInput />
+      <Tracker />
       </div>
+
     </div>
   );
 }
