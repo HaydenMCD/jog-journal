@@ -15,40 +15,35 @@ const SignUp = () => {
         <div className="sub-title">login details:</div>
         <input
           type="email"
-          className="email-input"
+          className="form-input"
           name="email-input"
           placeholder="Email"
           required
-        ></input>
+        />
         <input
           type="password"
-          className="password-input"
+          className="form-input"
           name="password-input"
           placeholder="Password"
           required
-        ></input>
+        />
         <div className="sub-title">About you:</div>
         <input
           type="text"
-          className="name-input"
+          className="form-input"
           name="name-input"
           placeholder="Name"
           required
-        ></input>
-        <input type="date" className="dob-input" name="dob-input" required />
+        />
+        <input type="date" className="form-input" name="dob-input" required />
         <input
           type="number"
-          className="weight-input"
+          className="form-input"
           name="weight-input"
           placeholder="Weight in kg"
           required
         />
-        <input
-          type="submit"
-          className="submit-btn"
-          name="submit-btn"
-          onClick={sendUserData}
-        ></input>
+        <input type="submit" className="submit-btn" onClick={sendUserData} />
       </div>
     </form>
   );
