@@ -1,20 +1,38 @@
 {
   "name": "jog-journal",
   "version": "0.1.0",
+  "description": "A simple jog journal app to track your runs and progress over time.",
+  "type": "module",
   "private": true,
-  "dependencies": {
-    "cra-template": "1.2.0",
-    "firebase": "^11.1.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^4.2.4"
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=11.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^11.6.1",
+    "firebase-hooks": "^0.0.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "vite": "^6.3.5"
   },
   "eslintConfig": {
     "extends": [
