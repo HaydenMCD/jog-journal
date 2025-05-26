@@ -19,7 +19,7 @@ const Login = () => {
         <input
           type="password"
           className="form-input"
-          name="password-input"
+          name="password"
           placeholder="Password"
           required
         />
