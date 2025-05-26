@@ -12,7 +12,7 @@ const Login = () => {
         <input
           type="email"
           className="form-input"
-          name="email-input"
+          name="email"
           placeholder="Email"
           required
         />
