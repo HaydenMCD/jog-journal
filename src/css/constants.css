@@ -1,0 +1,21 @@
+/* Base styles for the application, including colors and typography. */
+
+:root {
+    --bg: #2222;
+    --bg-header: #474747;
+    --text-light: #333333;
+    --text-dark: #ffffff;
+    --bg-btn: #00c7c763;
+    --bg-btn-active: #00bebea9;
+    --bg-submit-btn: lightblue;
+    --progress-bg: red;
+    --input-border-light: #ccc;
+    --input-border-dark: #ccc;
+    --error: #e74c3c;
+    --success: #2ecc71;
+    --warning: #f39c12;
+    --primary: #4a90e2;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --secondary: #50e3c2;
+    --border: #ccc;
+  }
