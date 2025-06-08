@@ -1,8 +1,10 @@
+@import './constants.css';
+
 .wrapper {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 
 body {
-    background-color: #2222;
+  background-color: var(--bg);
 }
