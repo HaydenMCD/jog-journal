@@ -1,9 +1,8 @@
 .header-wrapper {
   display: flex;
-  background-color: #474747;
-  color: white;
+  background-color: var(--bg-header);
+  color: var(--text-dark);
   justify-content: space-between;
-  height: 8vh;
   width: 100%;
 }
 

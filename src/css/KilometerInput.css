@@ -18,7 +18,7 @@
   width: 200px;
   text-align: center;
   font-size: 1.2rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--input-border-dark);
   border-radius: 4px;
   padding: 5px;
 }
@@ -30,22 +30,22 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  background-color: #00c7c763;
-  color: white;
+  background-color: var(--bg-btn);
+  color: var(--text-dark);
   min-width: 32px;
 }
 
 button:active {
-  background-color: #00bebea9;
+  background-color: var(--bg-btn-active);
 }
 
 .submitButton {
   margin-top: 10px;
-  background-color: #00c7c763;
+  background-color: var(--bg-btn);
   width: 250px;
   padding: 10px;
 }
 
 .submitButton:active {
-  background-color: #00bebea9;
+  background-color: var(--bg-btn-active);
 }
