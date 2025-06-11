@@ -1,22 +1,42 @@
 /* Base styles for the application, including colors and typography. */
+/* when tailwind is full adapted, the :root object can be removed
+values transferred to the @theme declaration */
 
 :root {
   --bg: #2222;
   --bg-header: #474747;
-  --text-light: #333333;
-  --text-dark: #ffffff;
+  --text-light-mode: #333333;
+  --text-dark-mode: #ffffff;
   --bg-btn: #00c7c763;
   --bg-btn-active: #00bebea9;
   --bg-submit-btn: lightblue;
-  --progress-bg: red;
-  --input-border-light: #ccc;
-  --input-border-dark: #ccc;
+  --bg-progress-bar: red;
+  --default-border: #ccc;
+  --input-border-light-mode: #474747;
+  --input-border-dark-mode: #ccc;
   --error: #e74c3c;
   --success: #2ecc71;
   --warning: #f39c12;
   --primary: #4a90e2;
-  --shadow: rgba(0, 0, 0, 0.1);
   --secondary: #50e3c2;
-  --border: #ccc;
+  --shadow: rgba(0, 0, 0, 0.1);
   font-size: 16px;
+}
+
+/* APPLY VARIABLE TO TAILWIND CSS CONFIG */
+/* colours and text can now be used in css tailwind classes */
+
+@theme inline {
+  --color-body-bg: var(--bg);
+  --color-header-bg: var(--bg-header);
+  --color-header: var(--bg-header);
+  --color-bg-btn: var(--bg-btn);
+  --color-bg-btn-active: var(--bg-btn-active);
+  --color-bg-submit-btn: var(--bg-submit-btn);
+  --color-progress-bar: var(--bg-progress-bar);
+  --color-default-border: var(--default-border);
+  --color-input-border--dark: var(--input-border-dark-mode);
+  --color-input-border--light: var(--input-border-light-mode);
+  --text-light: var(--text-light-mode);
+  --text-dark: var(--text-dark-mode);
 }

@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 @plugin "@tailwindcss/forms";
-
 @import './constants.css';
 
 body {
@@ -23,3 +22,4 @@ code {
   width: 100%;
   display: flex;
 }
+
