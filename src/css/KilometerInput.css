@@ -4,9 +4,9 @@
 @import './constants.css';
 
 .kilometerContainer {
-  width: 45%;
-  /* width: 0.021875vw; */
-  padding: 10px;
+  /* width: 45%; */
+  width: 0.021875vw;
+  padding: 0.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +51,7 @@ button:active {
 .submitButton {
   margin-top: 0.625rem;
   background-color: var(--bg-btn);
-  width: 250px;
+  width: 15.625rem;
   padding: 0.625rem;
 }
 
