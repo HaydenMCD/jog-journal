@@ -1,7 +1,8 @@
 @import 'tailwindcss';
+@import './constants.css';
+
 @plugin "@tailwindcss/typography";
 @plugin "@tailwindcss/forms";
-@import './constants.css';
 
 .kilometerContainer {
   @apply w-2/5 p-2.5 flex flex-col items-center pt-[6.75rem] gap-[3.125rem];
