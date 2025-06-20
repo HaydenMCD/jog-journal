@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+@import './constants.css';
+
+.auth-container {
+  @apply mx-auto my-0 flex w-1/2 flex-col pt-24 text-center;
+}
+
+.auth-title {
+  font-size: 5.25ch;
+  padding-bottom: 3.125rem;
+  padding-left: 0;
+}
+
+.auth-sub-title {
+  font-size: 3ch; /* 24 px */
+  padding-top: 1.25rem;
+}
+
+.auth-input {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.625rem; /* 10 px */
+  margin-top: 1.25rem; /* 20 px */
+}
+
+.auth-submit-btn {
+  width: 35%;
+  margin: 0 auto;
+  background-color: var(--bg-submit-btn);
+  padding: 0.625rem; /* 10 px */
+  margin-top: 1.25rem; /* 20 px */
+}
