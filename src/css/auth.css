@@ -1,7 +1,8 @@
 @import 'tailwindcss';
+@import './constants.css';
+
 @plugin "@tailwindcss/typography";
 @plugin "@tailwindcss/forms";
-@import './constants.css';
 
 .auth-container {
   @apply mx-auto my-0 flex w-1/2 flex-col pt-24 text-center;
