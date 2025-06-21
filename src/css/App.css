@@ -5,7 +5,7 @@
 @plugin "@tailwindcss/forms";
 
 body {
-  @apply m-0 bg-[var(--bg)];
+  @apply m-0 bg-body;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
