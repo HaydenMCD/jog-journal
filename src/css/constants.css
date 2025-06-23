@@ -1,22 +1,42 @@
+/* APPLY VARIABLE TO TAILWIND CSS CONFIG */
+/* colours and text can now be used in css tailwind classes */
+
+@theme inline {
+  --color-dark-mode: #ffffff;
+  --color-light-mode: #333333;
+  --color-body-dark-mode: #222222;
+  --color-body-light-mode: #dddddd;
+  --color-header-dark-mode: #474747;
+  --color-header-light-mode: #949393d7;
+  --color-input-border-dark-mode: #c7c4c4d7;
+  --color-input-border-light-mode: #474747;
+  --color-btn: #00c7c763;
+  --color-btn-active: #00bebea9;
+  --color-btn-submit: #4a90e2;
+  --color-progress-bar: #e74c3c;
+}
+
 /* Base styles for the application, including colors and typography. */
+/* when tailwind is full adapted, the :root object can be removed
+values transferred to the @theme declaration */
 
 :root {
-  --bg: #2222;
+  --bg: #222222;
   --bg-header: #474747;
-  --text-light: #333333;
-  --text-dark: #ffffff;
+  --text-light-mode: #333333;
+  --text-dark-mode: #ffffff;
   --bg-btn: #00c7c763;
   --bg-btn-active: #00bebea9;
-  --bg-submit-btn: lightblue;
-  --progress-bg: red;
-  --input-border-light: #ccc;
-  --input-border-dark: #ccc;
+  --bg-submit-btn: #4a90e2;
+  --bg-progress-bar: red;
+  --default-border: #ccc;
+  --input-border-light-mode: #474747;
+  --input-border-dark-mode: #ccc;
   --error: #e74c3c;
   --success: #2ecc71;
   --warning: #f39c12;
   --primary: #4a90e2;
-  --shadow: rgba(0, 0, 0, 0.1);
   --secondary: #50e3c2;
-  --border: #ccc;
+  --shadow: rgba(0, 0, 0, 0.1);
   font-size: 16px;
 }

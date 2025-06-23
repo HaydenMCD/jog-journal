@@ -1,23 +1,29 @@
+@import 'tailwindcss';
 @import './constants.css';
 
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  @apply dark:bg-body-dark-mode bg-body-light-mode dark:text-dark-mode text-light-mode;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  font-size: 1.2rem;
+  padding: 0.3125rem 0.625rem;
+  margin: 0 0.3125rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--bg-btn);
+  color: var(--text-dark);
+}
+
+button:active {
+  background-color: var(--bg-btn-active);
 }
 
 .wrapper {
-  width: 100%;
-  display: flex;
+  @apply flex w-full;
 }
-
-
