@@ -54,7 +54,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx,css}": [
+    "*.{ts,tsx,js,jsx,css,sh,*rc,mjs,json}": [
       "npx prettier --config .prettierrc --write"
     ]
   }
