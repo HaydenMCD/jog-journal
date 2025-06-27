@@ -19,6 +19,7 @@ export const DISTANCE_TYPES = {
 };
 
 export const NUMBER_INPUT_FIXED_DECIMAL = 2;
+export const KM_INCREMENT_DECREMENT_STEPS = 0.5;
 
 /* -------------------------------------------------------------------------- */
 /*                       Constants for time conversions                       */

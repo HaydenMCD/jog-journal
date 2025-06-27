@@ -5,7 +5,11 @@ import { useState } from 'react';
 import { firestore } from '../firebase';
 import { Timestamp, addDoc, collection } from 'firebase/firestore';
 
-import { THIS_YEAR, NUMBER_INPUT_FIXED_DECIMAL } from '../utils/constants';
+import {
+  THIS_YEAR,
+  NUMBER_INPUT_FIXED_DECIMAL,
+  KM_INCREMENT_DECREMENT_STEPS,
+} from '../utils/constants';
 
 const KilometerInput = () => {
   const [kmCount, setKmCount] = useState(
@@ -13,9 +17,17 @@ const KilometerInput = () => {
   );
 
   const increase = () =>
-    setKmCount((+kmCount + 1).toFixed(NUMBER_INPUT_FIXED_DECIMAL));
+    setKmCount(
+      (+kmCount + KM_INCREMENT_DECREMENT_STEPS).toFixed(
+        NUMBER_INPUT_FIXED_DECIMAL
+      )
+    );
   const decrease = () =>
-    setKmCount((+kmCount - 1).toFixed(NUMBER_INPUT_FIXED_DECIMAL));
+    setKmCount(
+      (+kmCount - KM_INCREMENT_DECREMENT_STEPS).toFixed(
+        NUMBER_INPUT_FIXED_DECIMAL
+      )
+    );
 
   const collectionRef = collection(firestore, `${THIS_YEAR} runs`); // Creates collection if one doesnt exist
 
