@@ -18,6 +18,8 @@ export const DISTANCE_TYPES = {
   },
 };
 
+export const NUMBER_INPUT_FIXED_DECIMAL = 2;
+
 /* -------------------------------------------------------------------------- */
 /*                       Constants for time conversions                       */
 /* -------------------------------------------------------------------------- */
