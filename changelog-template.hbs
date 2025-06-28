@@ -5,51 +5,39 @@
     ## Merged :heavy_check_mark:
 
     {{#each merges}}
-      ### [`#{{id}}`]({{href}}) {{message}}
-      {{author}}
+      - [`#{{id}}`]({{href}}) {{author}} - {{message}}
+      
     {{/each}}
   {{/if}}
 
   {{#commit-list commits heading='### New Features' message='feat'}}
-    - [`{{shorthash}}`]({{href}}) - {{title}}
-      {{message}}
-      {{niceDate}} - {{author}}
-
+     - {{id}} [`{{shorthash}}`]({{href}}) {{niceDate}} {{author}} - {{message}}
+    
   {{/commit-list}}
+
   {{#commit-list commits heading='### Refactored' message='refactor'}}
-    - [`{{shorthash}}`]({{href}}) - {{title}}
-      {{message}}
-      {{niceDate}} - {{author}}
-
+     - [`{{shorthash}}`]({{href}}) {{niceDate}} {{author}} - {{message}}
   {{/commit-list}}
+
   {{#commit-list commits heading='### Bug Fixes' message='bug'}}
-    - [`{{shorthash}}`]({{href}}) - {{title}}
-      {{message}}
-      {{niceDate}} - {{author}}
-
+     - [`{{shorthash}}`]({{href}}) {{niceDate}} {{author}} - {{message}} 
   {{/commit-list}}
+
   {{#commit-list commits heading='### Chore' message='chore'}}
-    - [`{{shorthash}}`]({{href}}) - {{title}}
-      {{message}}
-      {{niceDate}} - {{author}}
-
+     - [`{{shorthash}}`]({{href}}) {{niceDate}} {{author}} - {{message}}
   {{/commit-list}}
+
   {{#commit-list commits heading='### Reverted' message='revert'}}
-    - [`{{shorthash}}`]({{href}}) - {{title}}
-      {{message}}
-      {{niceDate}} - {{author}}
-
+     - [`{{shorthash}}`]({{href}}) {{niceDate}} {{author}} - {{message}}
   {{/commit-list}}
+  
   {{#if commits}}
     ## Commits :heavy_check_mark:
 
   {{#each commits}}
-    - [`#{{shorthash}}`]({{href}}) - {{title}}
-      {{message}}
-      {{niceDate}} - {{author}}
-
+    - [`{{shorthash}}`]({{href}}) {{niceDate}} {{author}} - {{message}}
+         
     {{/each}}
-  
   {{/if}}
 {{/each}}
 ---
