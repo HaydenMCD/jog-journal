@@ -25,11 +25,29 @@ Hayden McDowall
 
 ### Bug Fixes
 
+- [`052fa29`](https://github.com/HaydenMCD/jog-journal/commit/052fa29d0ed5643fc4182d569c5013ca62396c7f) - 
+#33 bug: fix husky commit scripts
+
+add new post-commit
+28 June 2025 - Anthony Legg
+
 - [`9946c8f`](https://github.com/HaydenMCD/jog-journal/commit/9946c8f7f48f17fb370096445427330e5c94d833) - 
 #28 bug fix progress bar `var()` line 13
 11 June 2025 - Anthony Legg
 
 ## Commits :heavy_check_mark:
+
+- [`#052fa29`](https://github.com/HaydenMCD/jog-journal/commit/052fa29d0ed5643fc4182d569c5013ca62396c7f) - 
+#33 bug: fix husky commit scripts
+
+add new post-commit
+28 June 2025 - Anthony Legg
+
+- [`#1a4b6f8`](https://github.com/HaydenMCD/jog-journal/commit/1a4b6f8a57d3863571cee71c159366ee7d15ad6a) - 
+#33 create changelog template
+
+add log script to `package.json`
+28 June 2025 - Anthony Legg
 
 - [`#0b9aa4e`](https://github.com/HaydenMCD/jog-journal/commit/0b9aa4e07a09f47cd7aa91c7603c5f74df6ac9b9) - 
 #33 update husky pre-commit hook

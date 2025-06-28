@@ -1,1 +1,1 @@
-npx --no-install lint-staged --allow-empty && npm run log
+npx --no-install lint-staged --allow-empty

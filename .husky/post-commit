@@ -1,1 +1,1 @@
-git add CHANGELOG.md
+npm run log && git add CHANGELOG.md
