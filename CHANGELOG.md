@@ -31,6 +31,12 @@ Hayden McDowall
 
 ## Commits :heavy_check_mark:
 
+- [`#0b9aa4e`](https://github.com/HaydenMCD/jog-journal/commit/0b9aa4e07a09f47cd7aa91c7603c5f74df6ac9b9) - 
+#33 update husky pre-commit hook
+
+add `git add changelog.md` command
+28 June 2025 - Anthony Legg
+
 - [`#0b92dba`](https://github.com/HaydenMCD/jog-journal/commit/0b92dba28272ae5b2703e51f7f00dc3f724172f9) - 
 #33 undo: remove cz-conventional-changelog dev dep
 28 June 2025 - Anthony Legg

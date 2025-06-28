@@ -14,7 +14,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "log": "auto-changelog --sort-commits date-desc --release-summary --output CHANGELOG.md --template changelog-template.hbs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
@@ -58,5 +59,11 @@
     "*.{ts,tsx,js,jsx,css,sh,*rc,mjs,json}": [
       "npx prettier --config .prettierrc --write"
     ]
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "changelog-template.hbs",
+    "unreleased": true,
+    "commitLimit": false
   }
 }
