@@ -26,6 +26,8 @@
 
 ## Commits :heavy_check_mark:
 
+- [`5b608ec`](https://github.com/HaydenMCD/jog-journal/commit/5b608ec35645b8cc0feac9e9c7d48f9804039d7d) 4 December 2025 Anthony Legg - build: #58 install tanstack router deps
+
 - [`f948932`](https://github.com/HaydenMCD/jog-journal/commit/f948932d69c70d86e2345c10021193899f101444) 20 May 2025 Hayden - Removed signup from app.js
 
 - [`71f9f67`](https://github.com/HaydenMCD/jog-journal/commit/71f9f674d47c89249c9fa2895c7a38a34d432d7f) 20 May 2025 Hayden - Chaned input class names to form-input. Changed all input's to self closing tags
