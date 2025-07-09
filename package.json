@@ -10,7 +10,7 @@
     "npm": ">=11.0.0"
   },
   "scripts": {
-    "dev": "vite --port 3000",
+    "dev": "react-router dev",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -18,9 +18,11 @@
     "log": "auto-changelog --sort-commits date-desc --release-summary --output CHANGELOG.md --template changelog-template.hbs"
   },
   "dependencies": {
+    "@react-router/node": "^7.6.3",
     "@tailwindcss/vite": "^4.1.8",
     "firebase": "^11.6.1",
     "firebase-hooks": "^0.0.1",
+    "isbot": "^5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^7.6.3",

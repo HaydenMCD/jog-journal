@@ -45,8 +45,13 @@ add new post-commit
 - [`9946c8f`](https://github.com/HaydenMCD/jog-journal/commit/9946c8f7f48f17fb370096445427330e5c94d833) 11 June 2025 Anthony Legg - #28 bug fix progress bar `var()` line 13 
 
 
+### Reverted
+
+- [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 - [`2e2642d`](https://github.com/HaydenMCD/jog-journal/commit/2e2642d6090eb2b35ffadbce5f48a172bfdcac5a) 9 July 2025 Anthony Legg - fix: changelog script not functioning
 
