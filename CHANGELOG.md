@@ -48,6 +48,10 @@ add new post-commit
 
 ## Commits :heavy_check_mark:
 
+- [`2e2642d`](https://github.com/HaydenMCD/jog-journal/commit/2e2642d6090eb2b35ffadbce5f48a172bfdcac5a) 9 July 2025 Anthony Legg - fix: changelog script not functioning
+
+testing fixes
+
 - [`a5f89a5`](https://github.com/HaydenMCD/jog-journal/commit/a5f89a5301c4547c930cb16fedf3c56dbb3933e5) 9 July 2025 Anthony Legg - #8 install vite related react-router
 
 packages. add plugin to vite.config.js
