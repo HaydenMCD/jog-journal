@@ -51,6 +51,8 @@ add new post-commit
 
 ## Commits :heavy_check_mark:
 
+- [`d91a085`](https://github.com/HaydenMCD/jog-journal/commit/d91a0858bbc54cdeedb6c86f829f74817b7117b1) 9 July 2025 Anthony Legg - #8 create react-router required files
+
 - [`0354593`](https://github.com/HaydenMCD/jog-journal/commit/03545930215547746d4756219a91c777ff633c99) 9 July 2025 Anthony Legg - #8 reconfigure vite.config.js
 
 create react-router.config.js, remove default index.html file, is replaced in the next commit
