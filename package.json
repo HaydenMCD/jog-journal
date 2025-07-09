@@ -57,7 +57,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "post-commit": "log && git add CHANGELOG.md"
     }
   },
   "lint-staged": {
