@@ -51,14 +51,6 @@ add new post-commit
 
 ## Commits :heavy_check_mark:
 
-- [`53d3702`](https://github.com/HaydenMCD/jog-journal/commit/53d37021044d4875ab9f4abafb37e8f6abbca665) 9 July 2025 Anthony Legg - #8 add generated react-router types
-
-- [`d91a085`](https://github.com/HaydenMCD/jog-journal/commit/d91a0858bbc54cdeedb6c86f829f74817b7117b1) 9 July 2025 Anthony Legg - #8 create react-router required files
-
-- [`0354593`](https://github.com/HaydenMCD/jog-journal/commit/03545930215547746d4756219a91c777ff633c99) 9 July 2025 Anthony Legg - #8 reconfigure vite.config.js
-
-create react-router.config.js, remove default index.html file, is replaced in the next commit
-
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 - [`2e2642d`](https://github.com/HaydenMCD/jog-journal/commit/2e2642d6090eb2b35ffadbce5f48a172bfdcac5a) 9 July 2025 Anthony Legg - fix: changelog script not functioning
