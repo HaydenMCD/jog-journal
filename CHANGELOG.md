@@ -47,6 +47,7 @@ add new post-commit
 
 ### Reverted
 
+- [`8c6f330`](https://github.com/HaydenMCD/jog-journal/commit/8c6f330a417335a9faede62d02ea3509052160a9) 10 July 2025 Anthony Legg - #8 revert: remove `react-router` deps and config
 - [`8a7b926`](https://github.com/HaydenMCD/jog-journal/commit/8a7b9262a73ced5f70a10629d3cf2aaa16d1fcc7) 10 July 2025 Anthony Legg - Revert "#8 reconfigure vite.config.js"
 
 This reverts commit 03545930215547746d4756219a91c777ff633c99.
@@ -58,6 +59,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`8c6f330`](https://github.com/HaydenMCD/jog-journal/commit/8c6f330a417335a9faede62d02ea3509052160a9) 10 July 2025 Anthony Legg - #8 revert: remove `react-router` deps and config
 
 - [`8a7b926`](https://github.com/HaydenMCD/jog-journal/commit/8a7b9262a73ced5f70a10629d3cf2aaa16d1fcc7) 10 July 2025 Anthony Legg - Revert "#8 reconfigure vite.config.js"
 
