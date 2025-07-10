@@ -60,6 +60,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`b6f0bed`](https://github.com/HaydenMCD/jog-journal/commit/b6f0bed73c2ae8ef4242dcc56d0cb4d2e1e9a39a) 10 July 2025 Anthony Legg - #8 install `tanstack router packages`
+
 - [`b9afe97`](https://github.com/HaydenMCD/jog-journal/commit/b9afe97072b863ea3aa0bfcfa9aca9d41ea49987) 10 July 2025 Anthony Legg - build: add `.nvmrc` file for node version
 
 remove `*rc` from prettier script in `package.json`
