@@ -60,6 +60,12 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`34b47ad`](https://github.com/HaydenMCD/jog-journal/commit/34b47addfdf89e8248d8e226eb8567c20d2be8a9) 10 July 2025 Anthony Legg - #8 add new router config
+
+`vite.config.js`
+
+- [`148e284`](https://github.com/HaydenMCD/jog-journal/commit/148e2845fbb78475706c30985402bc3450516ce0) 10 July 2025 Anthony Legg - #8 add tanstack router to vite.config
+
 - [`b6f0bed`](https://github.com/HaydenMCD/jog-journal/commit/b6f0bed73c2ae8ef4242dcc56d0cb4d2e1e9a39a) 10 July 2025 Anthony Legg - #8 install `tanstack router packages`
 
 - [`b9afe97`](https://github.com/HaydenMCD/jog-journal/commit/b9afe97072b863ea3aa0bfcfa9aca9d41ea49987) 10 July 2025 Anthony Legg - build: add `.nvmrc` file for node version
