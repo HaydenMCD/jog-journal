@@ -60,6 +60,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`3efbac4`](https://github.com/HaydenMCD/jog-journal/commit/3efbac424706a447c68d30105384d7c834bcb944) 10 July 2025 Anthony Legg - #8 create required `__root.jsx` file
+
 - [`34b47ad`](https://github.com/HaydenMCD/jog-journal/commit/34b47addfdf89e8248d8e226eb8567c20d2be8a9) 10 July 2025 Anthony Legg - #8 add new router config
 
 `vite.config.js`

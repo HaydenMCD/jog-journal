@@ -1,13 +1,16 @@
 import useDistanceValues from '../hooks/useDistanceValues';
 import DistanceRadioButtonForm from './form/DistanceRadioButtonForm';
 import '../css/Header.css';
+import { Link } from '@tanstack/react-router';
 
 const Header = () => {
   const { distanceType, toggleKilometers } = useDistanceValues();
   return (
     <header className='header-wrapper'>
       <div>
-        <h1 className='title'>Jog Journal</h1>
+        <Link to='/'>
+          <h1 className='title'>Home Jog Journal</h1>
+        </Link>
         <h2 className='slogan'>
           Your companion for tracking every step towards your yearly goal.
         </h2>
