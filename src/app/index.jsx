@@ -1,16 +1,13 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import { RouterProvider, createRouter } from '@tanstack/react-router';
-import { routeTree } from '../route-tree.gen';
+import { createFileRoute } from '@tanstack/react-router';
 
-const router = createRouter({ routeTree });
+export const Route = createFileRoute('/')({
+  component: HomePage,
+});
 
-const rootElement = document.getElementById('root');
-if (!rootElement.innerHTML) {
-  const root = createRoot(rootElement);
-  root.render(
-    <StrictMode>
-      <RouterProvider router={router} />
-    </StrictMode>
+function HomePage() {
+  return (
+    <section className='wrapper'>
+      <h2>Jogger App Public Info Page</h2>
+    </section>
   );
 }
