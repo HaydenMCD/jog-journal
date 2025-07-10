@@ -60,6 +60,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`b9afe97`](https://github.com/HaydenMCD/jog-journal/commit/b9afe97072b863ea3aa0bfcfa9aca9d41ea49987) 10 July 2025 Anthony Legg - build: add `.nvmrc` file for node version
+
+remove `*rc` from prettier script in `package.json`
+
 - [`8c6f330`](https://github.com/HaydenMCD/jog-journal/commit/8c6f330a417335a9faede62d02ea3509052160a9) 10 July 2025 Anthony Legg - #8 revert: remove `react-router` deps and config
 
 - [`8a7b926`](https://github.com/HaydenMCD/jog-journal/commit/8a7b9262a73ced5f70a10629d3cf2aaa16d1fcc7) 10 July 2025 Anthony Legg - Revert "#8 reconfigure vite.config.js"
