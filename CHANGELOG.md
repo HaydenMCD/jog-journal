@@ -24,6 +24,7 @@
 
 ### Bug Fixes
 
+- [`3801f0f`](https://github.com/HaydenMCD/jog-journal/commit/3801f0f6edee2656e0f9629b0acf8839f8ed6553) 10 July 2025 Anthony Legg - #8 debug loading public homepage 
 - [`1cea097`](https://github.com/HaydenMCD/jog-journal/commit/1cea097f1424a9554051055fc2a4df913e0c0553) 2 July 2025 Anthony Legg - Merge PR #51 from 11-bug-cannot-type-in-kilometer-input
 
 ## Completed
@@ -59,6 +60,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`3801f0f`](https://github.com/HaydenMCD/jog-journal/commit/3801f0f6edee2656e0f9629b0acf8839f8ed6553) 10 July 2025 Anthony Legg - #8 debug loading public homepage
 
 - [`1cdeb6b`](https://github.com/HaydenMCD/jog-journal/commit/1cdeb6b9c566918689782993ca7dba8bd6575936) 10 July 2025 Anthony Legg - #8 configure files for routing to home page
 

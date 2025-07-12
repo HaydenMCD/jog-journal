@@ -3,8 +3,19 @@ import DistanceRadioButtonForm from './form/DistanceRadioButtonForm';
 import '../css/Header.css';
 import { Link } from '@tanstack/react-router';
 
-const Header = () => {
+const AuthHeader = () => {
   const { distanceType, toggleKilometers } = useDistanceValues();
+  return (
+    <div>
+      <DistanceRadioButtonForm
+        distanceType={distanceType}
+        setKilometersOn={toggleKilometers}
+      />
+    </div>
+  );
+};
+
+const BaseHeader = ({ children }) => {
   return (
     <header className='header-wrapper'>
       <div>
@@ -15,12 +26,14 @@ const Header = () => {
           Your companion for tracking every step towards your yearly goal.
         </h2>
       </div>
-      <DistanceRadioButtonForm
-        distanceType={distanceType}
-        setKilometersOn={toggleKilometers}
-      />
+      {children}
     </header>
   );
+};
+
+const Header = () => {
+  const isAuth = true;
+  return <BaseHeader>{isAuth && <AuthHeader />}</BaseHeader>;
 };
 
 export default Header;
