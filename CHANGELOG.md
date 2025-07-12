@@ -67,6 +67,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`f88ecba`](https://github.com/HaydenMCD/jog-journal/commit/f88ecbaa5be0874cd3b8f1eeec86aeb4eb16a16d) 12 July 2025 Anthony Legg - #8 create auth routes
+
+including auth layout file
+
 - [`ed0f526`](https://github.com/HaydenMCD/jog-journal/commit/ed0f526e1d337fbc7eea3429ac659b89e0bec2de) 12 July 2025 Anthony Legg - #8 style: refactor __root.jsx so the header is outside main tag
 
 comment added for where to place a footer in future
