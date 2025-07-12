@@ -7,10 +7,11 @@ import Header from '../components/Header';
 export const Route = createRootRoute({
   component: () => (
     <>
+      <Header />
       <main className='app'>
-        <Header />
         <Outlet />
       </main>
+      {/* footer goes here */}
       <TanStackRouterDevtools />
     </>
   ),

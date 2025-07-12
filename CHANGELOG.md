@@ -20,6 +20,9 @@
 
 ### Refactored
 
+- [`a5d83fe`](https://github.com/HaydenMCD/jog-journal/commit/a5d83fe630818335f6ae0881da2a3ca7deeb81c7) 12 July 2025 Anthony Legg - #8 refactor `header.jsx` so it displays
+
+based on auth state which is currently hardcoded in the header itself
 - [`af5d787`](https://github.com/HaydenMCD/jog-journal/commit/af5d787fabe25017bd1884c8d0572b2dff525ade) 21 June 2025 Anthony Legg - #28 refactor `kilometerinput.css` to use tailwind
 
 ### Bug Fixes
@@ -60,6 +63,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`a5d83fe`](https://github.com/HaydenMCD/jog-journal/commit/a5d83fe630818335f6ae0881da2a3ca7deeb81c7) 12 July 2025 Anthony Legg - #8 refactor `header.jsx` so it displays
+
+based on auth state which is currently hardcoded in the header itself
 
 - [`3801f0f`](https://github.com/HaydenMCD/jog-journal/commit/3801f0f6edee2656e0f9629b0acf8839f8ed6553) 10 July 2025 Anthony Legg - #8 debug loading public homepage
 
