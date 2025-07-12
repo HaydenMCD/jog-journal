@@ -67,6 +67,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`47924d2`](https://github.com/HaydenMCD/jog-journal/commit/47924d2b407334a9c4e7ebe88cdc0020bb814abb) 12 July 2025 Anthony Legg - #8 reorganise auth route so layout route is hidden
+
 - [`f88ecba`](https://github.com/HaydenMCD/jog-journal/commit/f88ecbaa5be0874cd3b8f1eeec86aeb4eb16a16d) 12 July 2025 Anthony Legg - #8 create auth routes
 
 including auth layout file

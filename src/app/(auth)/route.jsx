@@ -4,12 +4,11 @@ export const Route = createFileRoute('/(auth)')({
   component: AuthLayout,
 });
 
-// check and redirect if user is signed in
+// check and redirect to user dashboard if user is signed in
 
 function AuthLayout() {
   return (
     <section>
-      test
       <Outlet />
     </section>
   );
