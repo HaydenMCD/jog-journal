@@ -20,6 +20,9 @@
 
 ### Refactored
 
+- [`ed0f526`](https://github.com/HaydenMCD/jog-journal/commit/ed0f526e1d337fbc7eea3429ac659b89e0bec2de) 12 July 2025 Anthony Legg - #8 style: refactor __root.jsx so the header is outside main tag
+
+comment added for where to place a footer in future
 - [`a5d83fe`](https://github.com/HaydenMCD/jog-journal/commit/a5d83fe630818335f6ae0881da2a3ca7deeb81c7) 12 July 2025 Anthony Legg - #8 refactor `header.jsx` so it displays
 
 based on auth state which is currently hardcoded in the header itself
@@ -63,6 +66,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`ed0f526`](https://github.com/HaydenMCD/jog-journal/commit/ed0f526e1d337fbc7eea3429ac659b89e0bec2de) 12 July 2025 Anthony Legg - #8 style: refactor __root.jsx so the header is outside main tag
+
+comment added for where to place a footer in future
 
 - [`a5d83fe`](https://github.com/HaydenMCD/jog-journal/commit/a5d83fe630818335f6ae0881da2a3ca7deeb81c7) 12 July 2025 Anthony Legg - #8 refactor `header.jsx` so it displays
 
