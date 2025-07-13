@@ -16,11 +16,12 @@ const AuthHeader = () => {
 };
 
 const BaseHeader = ({ children }) => {
+  const appName = `${import.meta.env.VITE_APP_NAME}`;
   return (
     <header className='header-wrapper'>
       <div>
         <Link to='/'>
-          <h1 className='title'>Home Jog Journal</h1>
+          <h1 className='title'>{appName}</h1>
         </Link>
         <h2 className='slogan'>
           Your companion for tracking every step towards your yearly goal.
@@ -32,7 +33,12 @@ const BaseHeader = ({ children }) => {
 };
 
 const Header = () => {
-  const isAuth = true;
+  const mode = import.meta.env.MODE;
+  let isAuth;
+  if (mode === 'development') {
+    isAuth = import.meta.env.VITE_USER_SIGNED_IN;
+  }
+
   return <BaseHeader>{isAuth && <AuthHeader />}</BaseHeader>;
 };
 
