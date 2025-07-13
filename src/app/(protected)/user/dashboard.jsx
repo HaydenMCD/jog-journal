@@ -4,17 +4,15 @@ import { DistanceProvider } from '../../../context/useDistanceProvider';
 import KilometerInput from '../../../components/KilometerInput';
 import StatsView from '../../../components/StatComponents/StatsView';
 
-export const Route = createFileRoute('/(protected)/user/__dashboard')({
+export const Route = createFileRoute('/(protected)/user/dashboard')({
   component: Dashboard,
 });
 
 function Dashboard() {
   return (
     <DistanceProvider>
-      <section className='wrapper'>
-        <KilometerInput />
-        <StatsView />
-      </section>
+      <KilometerInput />
+      <StatsView />
     </DistanceProvider>
   );
 }

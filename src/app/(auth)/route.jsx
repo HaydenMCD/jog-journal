@@ -8,7 +8,7 @@ export const Route = createFileRoute('/(auth)')({
 
 function AuthLayout() {
   return (
-    <section>
+    <section className='wrapper'>
       <Outlet />
     </section>
   );

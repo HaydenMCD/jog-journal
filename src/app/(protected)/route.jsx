@@ -6,7 +6,7 @@ export const Route = createFileRoute('/(protected)')({
 
 function ProtectedRouteLayout() {
   return (
-    <section>
+    <section className='wrapper'>
       <Outlet />
     </section>
   );
