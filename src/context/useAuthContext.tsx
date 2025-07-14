@@ -16,4 +16,8 @@ export interface AuthContextValue {
   user: User | null;
 }
 
-export default AuthContext;
+export const AuthContext = createContext<AuthContextValue>({
+  user: null,
+});
+
+export const useAuth = () => useContext(AuthContext);
