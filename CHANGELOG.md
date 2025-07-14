@@ -67,6 +67,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`ad5dc2a`](https://github.com/HaydenMCD/jog-journal/commit/ad5dc2aabc7e22a8d7cdd74f778d70be5c37e227) 14 July 2025 Anthony Legg - #8 init useAuthProvider hook
+
+requires typescript to manage input and response data
+
 - [`e0a9f20`](https://github.com/HaydenMCD/jog-journal/commit/e0a9f206d58e5a31ede2174862f879a4ca602db6) 14 July 2025 Anthony Legg - #8 complete inital useAuthContext hook structure
 
 - [`94a9e83`](https://github.com/HaydenMCD/jog-journal/commit/94a9e83de887a1cb0d427044985dd1a4f14e175a) 14 July 2025 Anthony Legg - #8 init auth context file
