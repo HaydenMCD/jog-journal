@@ -67,6 +67,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`faf187a`](https://github.com/HaydenMCD/jog-journal/commit/faf187a32a1a90850019b699c8957170276ca023) 13 July 2025 Anthony Legg - add app name as env variable
+
+use in the `header.jsx` file
+
 - [`262e77d`](https://github.com/HaydenMCD/jog-journal/commit/262e77d0d46102d06514c416ad807a3fc25d8ce7) 13 July 2025 Anthony Legg - #8 update (protected) & (auth) routes
 
 add wrapper class to layout templates
