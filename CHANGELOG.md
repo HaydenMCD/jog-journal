@@ -67,6 +67,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`e0a9f20`](https://github.com/HaydenMCD/jog-journal/commit/e0a9f206d58e5a31ede2174862f879a4ca602db6) 14 July 2025 Anthony Legg - #8 complete inital useAuthContext hook structure
+
 - [`94a9e83`](https://github.com/HaydenMCD/jog-journal/commit/94a9e83de887a1cb0d427044985dd1a4f14e175a) 14 July 2025 Anthony Legg - #8 init auth context file
 
 - [`faf187a`](https://github.com/HaydenMCD/jog-journal/commit/faf187a32a1a90850019b699c8957170276ca023) 13 July 2025 Anthony Legg - add app name as env variable
