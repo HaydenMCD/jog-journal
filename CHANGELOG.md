@@ -20,6 +20,9 @@
 
 ### Refactored
 
+- [`353ea20`](https://github.com/HaydenMCD/jog-journal/commit/353ea207a6ac00d9390a3a8b3c31dd67d6cea821) 15 July 2025 Anthony Legg - #8 refactor useAuthContext
+
+update firebase.js to use env variables in place of hardcoded values
 - [`ed0f526`](https://github.com/HaydenMCD/jog-journal/commit/ed0f526e1d337fbc7eea3429ac659b89e0bec2de) 12 July 2025 Anthony Legg - #8 style: refactor __root.jsx so the header is outside main tag
 
 comment added for where to place a footer in future
@@ -66,6 +69,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`353ea20`](https://github.com/HaydenMCD/jog-journal/commit/353ea207a6ac00d9390a3a8b3c31dd67d6cea821) 15 July 2025 Anthony Legg - #8 refactor useAuthContext
+
+update firebase.js to use env variables in place of hardcoded values
 
 - [`aa93ac6`](https://github.com/HaydenMCD/jog-journal/commit/aa93ac62b231eb795301c00c52b50f10ac9b5614) 14 July 2025 Anthony Legg - #8 add typescript dev deps
 

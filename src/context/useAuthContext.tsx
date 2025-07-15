@@ -15,7 +15,7 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
-  signOut as fbSignOut,
+  signOut as FirebaseSignOut,
   GoogleAuthProvider,
   signInWithPopup,
   getIdToken,
@@ -23,8 +23,6 @@ import {
   AuthError,
   AuthErrorMap,
 } from 'firebase/auth';
-
-import { auth } from '../firebase';
 
 export interface AuthContextType extends UserInfo {
   user: FirebaseUser | null;
@@ -41,12 +39,10 @@ export interface AuthContextType extends UserInfo {
   userLogOut: (userId: string) => Promise<object>;
 }
 
-export interface AuthContextValue {
-  user: FirebaseUser | null;
-}
+export const AuthContext = createContext<AuthContextType | null>(null);
 
-export const AuthContext = createContext<AuthContextValue>({
-  user: null,
-});
-
-export const useAuth = () => useContext(AuthContext);
+export const useAuth = (): AuthContextType => {
+  const authContext = useContext(AuthContext);
+  if (!authContext) throw new Error('useAuth must be used within AuthProvider');
+  return authContext;
+};
