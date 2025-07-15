@@ -67,6 +67,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`aa93ac6`](https://github.com/HaydenMCD/jog-journal/commit/aa93ac62b231eb795301c00c52b50f10ac9b5614) 14 July 2025 Anthony Legg - #8 add typescript dev deps
+
 - [`ad5dc2a`](https://github.com/HaydenMCD/jog-journal/commit/ad5dc2aabc7e22a8d7cdd74f778d70be5c37e227) 14 July 2025 Anthony Legg - #8 init useAuthProvider hook
 
 requires typescript to manage input and response data

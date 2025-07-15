@@ -1,19 +1,48 @@
-import { createContext, useContext } from 'react';
-import { UserInfo } from 'firebase/auth';
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  ReactNode,
+  useCallback,
+  useMemo,
+} from 'react';
 
-export interface User extends UserInfo {
+import {
+  User as FirebaseUser,
+  UserInfo,
+  UserMetadata,
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  signOut as fbSignOut,
+  GoogleAuthProvider,
+  signInWithPopup,
+  getIdToken,
+  AuthErrorCodes,
+  AuthError,
+  AuthErrorMap,
+} from 'firebase/auth';
+
+import { auth } from '../firebase';
+
+export interface AuthContextType extends UserInfo {
+  user: FirebaseUser | null;
+  loading: boolean;
   emailVerified: boolean;
-  userSignIn: (userId: string) => Promise<AuthContextValue>;
+  error: AuthError | null;
+  signInWithGoogle: () => Promise<void>;
+  userSignIn: (email: string, password: string) => Promise<void>;
   userSignUp: (
     email: string,
     password: string,
     confirmPassword: string
-  ) => Promise<AuthContextValue>;
+  ) => Promise<void>;
   userLogOut: (userId: string) => Promise<object>;
 }
 
 export interface AuthContextValue {
-  user: User | null;
+  user: FirebaseUser | null;
 }
 
 export const AuthContext = createContext<AuthContextValue>({
