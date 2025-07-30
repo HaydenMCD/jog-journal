@@ -77,6 +77,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`56e5e3b`](https://github.com/HaydenMCD/jog-journal/commit/56e5e3b6ce8bc327157d528873828e1193b2b0bb) 30 July 2025 Anthony Legg - build: update husky commit hook
+
+remove post commit hook and combine with precommit
+
 - [`ab16314`](https://github.com/HaydenMCD/jog-journal/commit/ab163146eb68072c04eb3f3097bd191a693ab03f) 30 July 2025 Anthony Legg - refactor: move tanstack router config to lib directory
 
 update `main.jsx` and `vite.config.js` with new path to the generated routes file
