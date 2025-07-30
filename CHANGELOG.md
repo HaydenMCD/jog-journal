@@ -64,6 +64,7 @@ add new post-commit
 
 ### Reverted
 
+- [`164ea6e`](https://github.com/HaydenMCD/jog-journal/commit/164ea6e82bc7a5e85d4e03d676ae4b22f208a890) 30 July 2025 Anthony Legg - revert: reinstate post-commit hook
 - [`8c6f330`](https://github.com/HaydenMCD/jog-journal/commit/8c6f330a417335a9faede62d02ea3509052160a9) 10 July 2025 Anthony Legg - #8 revert: remove `react-router` deps and config
 - [`8a7b926`](https://github.com/HaydenMCD/jog-journal/commit/8a7b9262a73ced5f70a10629d3cf2aaa16d1fcc7) 10 July 2025 Anthony Legg - Revert "#8 reconfigure vite.config.js"
 
@@ -76,6 +77,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`164ea6e`](https://github.com/HaydenMCD/jog-journal/commit/164ea6e82bc7a5e85d4e03d676ae4b22f208a890) 30 July 2025 Anthony Legg - revert: reinstate post-commit hook
 
 - [`e2a1b76`](https://github.com/HaydenMCD/jog-journal/commit/e2a1b7608d9f724903f2ba8ea969b7d435ab943b) 30 July 2025 Anthony Legg - build: update husky commit hook
 
