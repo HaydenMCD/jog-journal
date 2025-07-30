@@ -77,6 +77,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`e2a1b76`](https://github.com/HaydenMCD/jog-journal/commit/e2a1b7608d9f724903f2ba8ea969b7d435ab943b) 30 July 2025 Anthony Legg - build: update husky commit hook
+
 - [`56e5e3b`](https://github.com/HaydenMCD/jog-journal/commit/56e5e3b6ce8bc327157d528873828e1193b2b0bb) 30 July 2025 Anthony Legg - build: update husky commit hook
 
 remove post commit hook and combine with precommit
