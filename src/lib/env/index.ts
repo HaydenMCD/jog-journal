@@ -1,41 +1,37 @@
-import { config } from 'dotenv';
-import { expand } from 'dotenv-expand';
+import { z } from 'zod';
 
-import { ZodError, z } from 'zod';
+// Extend ImportMeta interface to include 'env'
+interface ImportMetaEnv {
+  [key: string]: string | boolean | undefined;
+}
 
-const EnvSchema = z.object({
-  NODE_ENV: z
-    .enum(['development', 'preview', 'testing', 'production'])
-    .default('development')
-    .readonly(),
-  FIREBASE_API_KEY: z.string().min(10).readonly(),
-  FIREBASE_AUTH_DOMAIN: z.string().min(10).readonly(),
-  FIREBASE_PROJECT_ID: z.string().min(10).readonly(),
-  FIREBASE_STORAGE_BUCKET: z.string().min(10).readonly(),
-  FIREBASE_MESSAGING_SENDER_ID: z.string().min(10).readonly(),
-  FIREBASE_APP_ID: z.string().min(10).readonly(),
-});
-
-export type TEnv = z.infer<typeof EnvSchema>;
-
-expand(config());
-
-try {
-  EnvSchema.parse(process.env);
-} catch (error) {
-  if (error instanceof ZodError) {
-    let message = 'Missing required values in .env:\n';
-    error.issues.forEach((issue) => {
-      message += issue.path[0] + '\n';
-    });
-    const e = new Error(message);
-    e.stack = '';
-    throw e;
-  } else {
-    console.error(error);
+declare global {
+  interface ImportMeta {
+    readonly env: ImportMetaEnv;
   }
 }
 
-const ENV = EnvSchema.parse(process.env);
+const EnvSchema = z.object({
+  VITE_APP_NAME: z.string().min(6),
+  VITE_NODE_ENV: z
+    .enum(['development', 'preview', 'testing', 'production'])
+    .default('development'),
+  VITE_FIREBASE_API_KEY: z.string().min(10),
+  VITE_FIREBASE_AUTH_DOMAIN: z.string().min(10),
+  VITE_FIREBASE_PROJECT_ID: z.string().min(10),
+  VITE_FIREBASE_STORAGE_BUCKET: z.string().min(10),
+  VITE_FIREBASE_MESSAGING_SENDER_ID: z.string().min(10),
+  VITE_FIREBASE_APP_ID: z.string().min(10),
+});
 
-export default ENV;
+const parsedEnv = EnvSchema.safeParse(import.meta.env);
+
+if (!parsedEnv.success) {
+  console.error(
+    'Invalid environment variables:',
+    parsedEnv.error.flatten().fieldErrors
+  );
+  throw new Error('Invalid environment variables');
+}
+
+export const ENV = parsedEnv.data;

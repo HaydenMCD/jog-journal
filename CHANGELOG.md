@@ -20,6 +20,9 @@
 
 ### Refactored
 
+- [`8afe32b`](https://github.com/HaydenMCD/jog-journal/commit/8afe32b7ae09a6cf5cf01d2e38fac423c0b26db5) 30 July 2025 Anthony Legg - refactor: env.ts to use vite specific env keys
+
+add type augmentation to resolve errors
 - [`ab16314`](https://github.com/HaydenMCD/jog-journal/commit/ab163146eb68072c04eb3f3097bd191a693ab03f) 30 July 2025 Anthony Legg - refactor: move tanstack router config to lib directory
 
 update `main.jsx` and `vite.config.js` with new path to the generated routes file
@@ -61,6 +64,9 @@ update new post-commit so that it only handles changelog
 add new post-commit 
 - [`9946c8f`](https://github.com/HaydenMCD/jog-journal/commit/9946c8f7f48f17fb370096445427330e5c94d833) 11 June 2025 Anthony Legg - #28 bug fix progress bar `var()` line 13 
 
+### Chore
+
+- [`9dfe6d1`](https://github.com/HaydenMCD/jog-journal/commit/9dfe6d1a3ddd5b1e2738c106ce409c0adf5a5dcb) 30 July 2025 Anthony Legg - chore: #50 move env.ts to lib subdirectory
 
 ### Reverted
 
@@ -78,6 +84,12 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`8afe32b`](https://github.com/HaydenMCD/jog-journal/commit/8afe32b7ae09a6cf5cf01d2e38fac423c0b26db5) 30 July 2025 Anthony Legg - refactor: env.ts to use vite specific env keys
+
+add type augmentation to resolve errors
+
+- [`9dfe6d1`](https://github.com/HaydenMCD/jog-journal/commit/9dfe6d1a3ddd5b1e2738c106ce409c0adf5a5dcb) 30 July 2025 Anthony Legg - chore: #50 move env.ts to lib subdirectory
 
 - [`e6920a3`](https://github.com/HaydenMCD/jog-journal/commit/e6920a31189e476538f510f36b6850e24c6ad9fc) 30 July 2025 Anthony Legg - #50 create env file to validate env variables/types
 
