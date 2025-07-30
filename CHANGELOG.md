@@ -20,6 +20,9 @@
 
 ### Refactored
 
+- [`2074638`](https://github.com/HaydenMCD/jog-journal/commit/2074638d9e5351d7318adcb882bc832ecce5abeb) 15 July 2025 Anthony Legg - #8 refactor useAuthContext
+
+export useauth hook
 - [`353ea20`](https://github.com/HaydenMCD/jog-journal/commit/353ea207a6ac00d9390a3a8b3c31dd67d6cea821) 15 July 2025 Anthony Legg - #8 refactor useAuthContext
 
 update firebase.js to use env variables in place of hardcoded values
@@ -33,6 +36,7 @@ based on auth state which is currently hardcoded in the header itself
 
 ### Bug Fixes
 
+- [`02002e8`](https://github.com/HaydenMCD/jog-journal/commit/02002e81966ae0d8d193ce2e4db48b3eb1b30d3e) 26 July 2025 Anthony Legg - fix: install bug fix for security warning 
 - [`3801f0f`](https://github.com/HaydenMCD/jog-journal/commit/3801f0f6edee2656e0f9629b0acf8839f8ed6553) 10 July 2025 Anthony Legg - #8 debug loading public homepage 
 - [`1cea097`](https://github.com/HaydenMCD/jog-journal/commit/1cea097f1424a9554051055fc2a4df913e0c0553) 2 July 2025 Anthony Legg - Merge PR #51 from 11-bug-cannot-type-in-kilometer-input
 
@@ -69,6 +73,12 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`02002e8`](https://github.com/HaydenMCD/jog-journal/commit/02002e81966ae0d8d193ce2e4db48b3eb1b30d3e) 26 July 2025 Anthony Legg - fix: install bug fix for security warning
+
+- [`2074638`](https://github.com/HaydenMCD/jog-journal/commit/2074638d9e5351d7318adcb882bc832ecce5abeb) 15 July 2025 Anthony Legg - #8 refactor useAuthContext
+
+export useauth hook
 
 - [`353ea20`](https://github.com/HaydenMCD/jog-journal/commit/353ea207a6ac00d9390a3a8b3c31dd67d6cea821) 15 July 2025 Anthony Legg - #8 refactor useAuthContext
 
