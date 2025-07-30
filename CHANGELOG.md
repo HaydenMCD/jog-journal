@@ -79,6 +79,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`14011b2`](https://github.com/HaydenMCD/jog-journal/commit/14011b27b17dbcd80046d930653ab45166b1f815) 30 July 2025 Anthony Legg - #50 install zod, dotenv deps for env validation
+
 - [`9bffbc5`](https://github.com/HaydenMCD/jog-journal/commit/9bffbc57930513617a5517db9ce1717df45c1ca4) 30 July 2025 Anthony Legg - revert: reinstate pre-commit hook to previous version
 
 - [`164ea6e`](https://github.com/HaydenMCD/jog-journal/commit/164ea6e82bc7a5e85d4e03d676ae4b22f208a890) 30 July 2025 Anthony Legg - revert: reinstate post-commit hook
