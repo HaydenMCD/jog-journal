@@ -8,7 +8,6 @@ const EnvSchema = z.object({
     .enum(['development', 'preview', 'testing', 'production'])
     .default('development')
     .readonly(),
-  DATABASE_URL: z.string().min(15).url().readonly(),
   FIREBASE_API_KEY: z.string().min(10).readonly(),
   FIREBASE_AUTH_DOMAIN: z.string().min(10).readonly(),
   FIREBASE_PROJECT_ID: z.string().min(10).readonly(),
