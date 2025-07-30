@@ -85,6 +85,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`67ca9e3`](https://github.com/HaydenMCD/jog-journal/commit/67ca9e307399797de743f85e970ae650c29f2dcd) 30 July 2025 Anthony Legg - #50 create local env validation
+
+`env_local.ts`
+
 - [`839b94f`](https://github.com/HaydenMCD/jog-journal/commit/839b94f0d994d261f176e26956b74055572f748e) 30 July 2025 Anthony Legg - refactor: #50 env.ts to use vite specific env keys
 
 add type augmentation to resolve errors
