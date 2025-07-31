@@ -14,7 +14,7 @@ declare global {
 const EnvSchema = z.object({
   VITE_APP_NAME: z.string().min(6),
   VITE_NODE_ENV: z
-    .enum(['development', 'preview', 'testing', 'production'])
+    .enum(['development', 'test', 'production'])
     .default('development'),
   VITE_FIREBASE_API_KEY: z.string().min(10),
   VITE_FIREBASE_AUTH_DOMAIN: z.string().min(10),
@@ -22,6 +22,7 @@ const EnvSchema = z.object({
   VITE_FIREBASE_STORAGE_BUCKET: z.string().min(10),
   VITE_FIREBASE_MESSAGING_SENDER_ID: z.string().min(10),
   VITE_FIREBASE_APP_ID: z.string().min(10),
+  VITE_USER_SIGNED_IN: z.coerce.boolean().optional(),
 });
 
 const parsedEnv = EnvSchema.safeParse(import.meta.env);

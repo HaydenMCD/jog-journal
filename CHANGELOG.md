@@ -85,6 +85,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`e0680df`](https://github.com/HaydenMCD/jog-journal/commit/e0680df7d90496d1b74c3e23576380ef9b34ebb1) 30 July 2025 Anthony Legg - #50 update firebase config to use validated env
+
 - [`67ca9e3`](https://github.com/HaydenMCD/jog-journal/commit/67ca9e307399797de743f85e970ae650c29f2dcd) 30 July 2025 Anthony Legg - #50 create local env validation
 
 `env_local.ts`
