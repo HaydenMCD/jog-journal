@@ -20,6 +20,9 @@
 
 ### Refactored
 
+- [`4bfb42a`](https://github.com/HaydenMCD/jog-journal/commit/4bfb42a07dc89f5c3591d7df790eb76bb845ad56) 31 July 2025 Anthony Legg - refactor: #50 update env validator
+
+add in dev only variables loaded from `.env.local` file
 - [`839b94f`](https://github.com/HaydenMCD/jog-journal/commit/839b94f0d994d261f176e26956b74055572f748e) 30 July 2025 Anthony Legg - refactor: #50 env.ts to use vite specific env keys
 
 add type augmentation to resolve errors
@@ -84,6 +87,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`4bfb42a`](https://github.com/HaydenMCD/jog-journal/commit/4bfb42a07dc89f5c3591d7df790eb76bb845ad56) 31 July 2025 Anthony Legg - refactor: #50 update env validator
+
+add in dev only variables loaded from `.env.local` file
 
 - [`e0680df`](https://github.com/HaydenMCD/jog-journal/commit/e0680df7d90496d1b74c3e23576380ef9b34ebb1) 30 July 2025 Anthony Legg - #50 update firebase config to use validated env
 
