@@ -12,7 +12,7 @@ const EnvSchema = z.object({
   VITE_USER_SIGNED_IN: z.coerce.boolean(),
 });
 
-const mode = import.meta.env.MODE;
+// const mode = import.meta.env.MODE;
 const parsedEnv = EnvSchema.safeParse(import.meta.env);
 
 if (!parsedEnv.success) {
@@ -23,4 +23,6 @@ if (!parsedEnv.success) {
   throw new Error('Invalid environment variables');
 }
 
-export const ENV = parsedEnv.data;
+const ENV = parsedEnv.data;
+
+export default ENV;

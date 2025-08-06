@@ -88,6 +88,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`c1c3e36`](https://github.com/HaydenMCD/jog-journal/commit/c1c3e365fa2348efdab42a0a6f010d762c8a9730) 31 July 2025 Anthony Legg - #50 add vite env type file
+
 - [`4bfb42a`](https://github.com/HaydenMCD/jog-journal/commit/4bfb42a07dc89f5c3591d7df790eb76bb845ad56) 31 July 2025 Anthony Legg - refactor: #50 update env validator
 
 add in dev only variables loaded from `.env.local` file
