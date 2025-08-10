@@ -91,6 +91,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`3e29253`](https://github.com/HaydenMCD/jog-journal/commit/3e29253dedcffbd8dd1db1df4bc8f7ecd94adabc) 10 August 2025 Anthony Legg - fix: import statement for firebase config
+
 - [`b396589`](https://github.com/HaydenMCD/jog-journal/commit/b396589e19120ed1a790d2107ad46c464e10a1de) 10 August 2025 Anthony Legg - fix: #50 import statement for env file
 
 - [`77a0a43`](https://github.com/HaydenMCD/jog-journal/commit/77a0a43aa1a628d34db73b5bb554575d9405ec85) 10 August 2025 Anthony Legg - fix: add .gitinclude to `tanstack/router` directory
