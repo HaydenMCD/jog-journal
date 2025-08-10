@@ -2,7 +2,7 @@ import '../css/KilometerInput.css';
 
 import { useState } from 'react';
 
-import { firestore } from '../utils/firebase';
+import { firestore } from '../firebase';
 import { Timestamp, addDoc, collection } from 'firebase/firestore';
 
 import {
