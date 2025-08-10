@@ -91,6 +91,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`77a0a43`](https://github.com/HaydenMCD/jog-journal/commit/77a0a43aa1a628d34db73b5bb554575d9405ec85) 10 August 2025 Anthony Legg - fix: add .gitinclude to `tanstack/router` directory
+
+so this does not disappear when freshly cloned or deployed
+
 - [`8f71c4d`](https://github.com/HaydenMCD/jog-journal/commit/8f71c4d098c816e46ac2fa6b1714f60699f415eb) 10 August 2025 Anthony Legg - #50 fix env file by adding type reference line
 
 to line 1 of `lib/env/index.ts`
