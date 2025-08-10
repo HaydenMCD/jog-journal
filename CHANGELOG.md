@@ -45,6 +45,9 @@ based on auth state which is currently hardcoded in the header itself
 
 ### Bug Fixes
 
+- [`c7a1947`](https://github.com/HaydenMCD/jog-journal/commit/c7a1947acdb648cd93e8f761954e8ef6706bbbe2) 6 August 2025 Anthony Legg - #50 debug env parsing issues
+
+vite-env.d.ts still needs to be updated 
 - [`02002e8`](https://github.com/HaydenMCD/jog-journal/commit/02002e81966ae0d8d193ce2e4db48b3eb1b30d3e) 26 July 2025 Anthony Legg - fix: install bug fix for security warning 
 - [`3801f0f`](https://github.com/HaydenMCD/jog-journal/commit/3801f0f6edee2656e0f9629b0acf8839f8ed6553) 10 July 2025 Anthony Legg - #8 debug loading public homepage 
 - [`1cea097`](https://github.com/HaydenMCD/jog-journal/commit/1cea097f1424a9554051055fc2a4df913e0c0553) 2 July 2025 Anthony Legg - Merge PR #51 from 11-bug-cannot-type-in-kilometer-input
@@ -87,6 +90,14 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`8f71c4d`](https://github.com/HaydenMCD/jog-journal/commit/8f71c4d098c816e46ac2fa6b1714f60699f415eb) 10 August 2025 Anthony Legg - #50 fix env file by adding type reference line
+
+to line 1 of `lib/env/index.ts`
+
+- [`c7a1947`](https://github.com/HaydenMCD/jog-journal/commit/c7a1947acdb648cd93e8f761954e8ef6706bbbe2) 6 August 2025 Anthony Legg - #50 debug env parsing issues
+
+vite-env.d.ts still needs to be updated
 
 - [`c1c3e36`](https://github.com/HaydenMCD/jog-journal/commit/c1c3e365fa2348efdab42a0a6f010d762c8a9730) 31 July 2025 Anthony Legg - #50 add vite env type file
 
