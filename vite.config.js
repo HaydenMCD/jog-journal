@@ -11,6 +11,7 @@ export default defineConfig(() => {
       outDir: 'build',
     },
     plugins: [
+      tailwindcss(),
       tanstackRouter({
         target: 'react',
         autoCodeSplitting: true,
@@ -19,7 +20,6 @@ export default defineConfig(() => {
         quoteStyle: 'single',
       }),
       react(),
-      tailwindcss(),
     ],
   };
 });
