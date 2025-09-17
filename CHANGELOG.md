@@ -20,6 +20,9 @@
 
 ### Refactored
 
+- [`85e4991`](https://github.com/HaydenMCD/jog-journal/commit/85e4991c205dd5384b09f8688dbf45314d7c79be) 17 September 2025 Anthony Legg - refactor: create `app.tsx`; split code into separate files
+
+import css into `main.jsx` instead of `__root.jsx`
 - [`4bfb42a`](https://github.com/HaydenMCD/jog-journal/commit/4bfb42a07dc89f5c3591d7df790eb76bb845ad56) 31 July 2025 Anthony Legg - refactor: #50 update env validator
 
 add in dev only variables loaded from `.env.local` file
@@ -90,6 +93,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`85e4991`](https://github.com/HaydenMCD/jog-journal/commit/85e4991c205dd5384b09f8688dbf45314d7c79be) 17 September 2025 Anthony Legg - refactor: create `app.tsx`; split code into separate files
+
+import css into `main.jsx` instead of `__root.jsx`
 
 - [`39f2efd`](https://github.com/HaydenMCD/jog-journal/commit/39f2efd50115588a757647c262c687743d26ef53) 17 September 2025 Anthony Legg - build: reorder vite plugins
 

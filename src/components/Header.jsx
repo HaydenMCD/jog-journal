@@ -1,6 +1,7 @@
+import '../css/Header.css';
+
 import useDistanceValues from '../hooks/useDistanceValues';
 import DistanceRadioButtonForm from './form/DistanceRadioButtonForm';
-import '../css/Header.css';
 import { Link } from '@tanstack/react-router';
 
 const AuthHeader = () => {
@@ -33,10 +34,12 @@ const BaseHeader = ({ children }) => {
 };
 
 const Header = () => {
-  const mode = import.meta.env.MODE;
+  const localMode = import.meta.env.VITE_LOCAL_MODE;
   let isAuth;
-  if (mode === 'development') {
+  if (localMode) {
     isAuth = import.meta.env.VITE_USER_SIGNED_IN;
+  } else {
+    console.log('get auth from firebase');
   }
 
   return <BaseHeader>{isAuth && <AuthHeader />}</BaseHeader>;
