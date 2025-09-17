@@ -91,6 +91,12 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`45b02ea`](https://github.com/HaydenMCD/jog-journal/commit/45b02eaf9c4147cc612a684ae75958c4107e67ba) 12 August 2025 Anthony Legg - build: #50 remove dotenv packages
+
+- [`504355b`](https://github.com/HaydenMCD/jog-journal/commit/504355b185e5f52b3703c95b0f739174ed3e9f54) 10 August 2025 Anthony Legg - build: add `.npmrc` file
+
+use `--legacy-peer-deps` as default.
+
 - [`3e29253`](https://github.com/HaydenMCD/jog-journal/commit/3e29253dedcffbd8dd1db1df4bc8f7ecd94adabc) 10 August 2025 Anthony Legg - fix: import statement for firebase config
 
 - [`b396589`](https://github.com/HaydenMCD/jog-journal/commit/b396589e19120ed1a790d2107ad46c464e10a1de) 10 August 2025 Anthony Legg - fix: #50 import statement for env file
