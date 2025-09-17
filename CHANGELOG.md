@@ -91,6 +91,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`39f2efd`](https://github.com/HaydenMCD/jog-journal/commit/39f2efd50115588a757647c262c687743d26ef53) 17 September 2025 Anthony Legg - build: reorder vite plugins
+
 - [`a54f909`](https://github.com/HaydenMCD/jog-journal/commit/a54f909a56c57041fedf347bd3d41937d715746a) 17 September 2025 Anthony Legg - build: reorganise husky hooks
 
 combine into pre-commit only
