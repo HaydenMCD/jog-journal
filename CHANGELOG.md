@@ -98,6 +98,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`53ee6b4`](https://github.com/HaydenMCD/jog-journal/commit/53ee6b46c75da6cc82b5ded94a5de9a9ea27f631) 18 September 2025 Anthony Legg - build: update eslint config
+
+remove unused eslint plugins
+
 - [`d553cf7`](https://github.com/HaydenMCD/jog-journal/commit/d553cf72340cf0a15f0fbfd4a5c7c44f32274017) 18 September 2025 Anthony Legg - build: install additional eslint plugins
 
 - [`3268c25`](https://github.com/HaydenMCD/jog-journal/commit/3268c25061500fb805ce0fc146a80ff60d8ecc95) 18 September 2025 Anthony Legg - revert:remove .eslint.json file
