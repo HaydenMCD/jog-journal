@@ -82,6 +82,7 @@ add new post-commit
 
 ### Reverted
 
+- [`3268c25`](https://github.com/HaydenMCD/jog-journal/commit/3268c25061500fb805ce0fc146a80ff60d8ecc95) 18 September 2025 Anthony Legg - revert:remove .eslint.json file
 - [`9bffbc5`](https://github.com/HaydenMCD/jog-journal/commit/9bffbc57930513617a5517db9ce1717df45c1ca4) 30 July 2025 Anthony Legg - revert: reinstate pre-commit hook to previous version
 - [`164ea6e`](https://github.com/HaydenMCD/jog-journal/commit/164ea6e82bc7a5e85d4e03d676ae4b22f208a890) 30 July 2025 Anthony Legg - revert: reinstate post-commit hook
 - [`8c6f330`](https://github.com/HaydenMCD/jog-journal/commit/8c6f330a417335a9faede62d02ea3509052160a9) 10 July 2025 Anthony Legg - #8 revert: remove `react-router` deps and config
@@ -96,6 +97,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`3268c25`](https://github.com/HaydenMCD/jog-journal/commit/3268c25061500fb805ce0fc146a80ff60d8ecc95) 18 September 2025 Anthony Legg - revert:remove .eslint.json file
 
 - [`bd9eae3`](https://github.com/HaydenMCD/jog-journal/commit/bd9eae3584e3a72b535f7426d12cf38109d6471d) 18 September 2025 Anthony Legg - build: install/replace vite react plugin
 
