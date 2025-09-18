@@ -34,9 +34,9 @@ const BaseHeader = ({ children }) => {
 };
 
 const Header = () => {
-  const localMode = import.meta.env.VITE_LOCAL_MODE;
+  // const localMode = import.meta.env.MODE;
   let isAuth;
-  if (localMode) {
+  if (import.meta.env.MODE === 'development') {
     isAuth = import.meta.env.VITE_USER_SIGNED_IN;
   } else {
     console.log('get auth from firebase');
