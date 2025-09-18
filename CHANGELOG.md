@@ -98,6 +98,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`d553cf7`](https://github.com/HaydenMCD/jog-journal/commit/d553cf72340cf0a15f0fbfd4a5c7c44f32274017) 18 September 2025 Anthony Legg - build: install additional eslint plugins
+
 - [`3268c25`](https://github.com/HaydenMCD/jog-journal/commit/3268c25061500fb805ce0fc146a80ff60d8ecc95) 18 September 2025 Anthony Legg - revert:remove .eslint.json file
 
 - [`bd9eae3`](https://github.com/HaydenMCD/jog-journal/commit/bd9eae3584e3a72b535f7426d12cf38109d6471d) 18 September 2025 Anthony Legg - build: install/replace vite react plugin
