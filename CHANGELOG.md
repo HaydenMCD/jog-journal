@@ -20,6 +20,7 @@
 
 ### Refactored
 
+- [`3bfb441`](https://github.com/HaydenMCD/jog-journal/commit/3bfb441c6e5d6d7dd385013c973783e5eaa21bb0) 18 September 2025 Anthony Legg - refactor: `header.jsx` updated to use builtin env MODE key
 - [`365d0dd`](https://github.com/HaydenMCD/jog-journal/commit/365d0ddaff7baf0b49f05725d6409ffae65f8a35) 18 September 2025 Anthony Legg - refactor: .env* updated
 - [`72e04ee`](https://github.com/HaydenMCD/jog-journal/commit/72e04eee395ea2d0d102af2888ac14d2eccc8cee) 17 September 2025 Anthony Legg - refactor: implement test auth state via env variables
 - [`85e4991`](https://github.com/HaydenMCD/jog-journal/commit/85e4991c205dd5384b09f8688dbf45314d7c79be) 17 September 2025 Anthony Legg - refactor: create `app.tsx`; split code into separate files
@@ -95,6 +96,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`3bfb441`](https://github.com/HaydenMCD/jog-journal/commit/3bfb441c6e5d6d7dd385013c973783e5eaa21bb0) 18 September 2025 Anthony Legg - refactor: `header.jsx` updated to use builtin env MODE key
 
 - [`365d0dd`](https://github.com/HaydenMCD/jog-journal/commit/365d0ddaff7baf0b49f05725d6409ffae65f8a35) 18 September 2025 Anthony Legg - refactor: .env* updated
 
