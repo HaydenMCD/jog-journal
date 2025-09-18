@@ -97,6 +97,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`6c3079c`](https://github.com/HaydenMCD/jog-journal/commit/6c3079c71e70a1e9a9611f245cc4c5c22116b8e6) 18 September 2025 Anthony Legg - build: `eslint` config removed from package.json
+
 - [`3bfb441`](https://github.com/HaydenMCD/jog-journal/commit/3bfb441c6e5d6d7dd385013c973783e5eaa21bb0) 18 September 2025 Anthony Legg - refactor: `header.jsx` updated to use builtin env MODE key
 
 - [`365d0dd`](https://github.com/HaydenMCD/jog-journal/commit/365d0ddaff7baf0b49f05725d6409ffae65f8a35) 18 September 2025 Anthony Legg - refactor: .env* updated
