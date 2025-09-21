@@ -83,6 +83,7 @@ add new post-commit
 
 ### Reverted
 
+- [`7ab69b9`](https://github.com/HaydenMCD/jog-journal/commit/7ab69b94e8ae5de7b1840c3980ee06d468f5e41b) 21 September 2025 Anthony Legg - revert: remove `useAuthProvider`
 - [`3268c25`](https://github.com/HaydenMCD/jog-journal/commit/3268c25061500fb805ce0fc146a80ff60d8ecc95) 18 September 2025 Anthony Legg - revert:remove .eslint.json file
 - [`9bffbc5`](https://github.com/HaydenMCD/jog-journal/commit/9bffbc57930513617a5517db9ce1717df45c1ca4) 30 July 2025 Anthony Legg - revert: reinstate pre-commit hook to previous version
 - [`164ea6e`](https://github.com/HaydenMCD/jog-journal/commit/164ea6e82bc7a5e85d4e03d676ae4b22f208a890) 30 July 2025 Anthony Legg - revert: reinstate post-commit hook
@@ -98,6 +99,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`7ab69b9`](https://github.com/HaydenMCD/jog-journal/commit/7ab69b94e8ae5de7b1840c3980ee06d468f5e41b) 21 September 2025 Anthony Legg - revert: remove `useAuthProvider`
 
 - [`c23628d`](https://github.com/HaydenMCD/jog-journal/commit/c23628dd8935928361b4fbd3922983dcb281b8a7) 21 September 2025 Anthony Legg - fix: correct env imports
 
