@@ -98,6 +98,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`c24cca7`](https://github.com/HaydenMCD/jog-journal/commit/c24cca7bc8de9571add17bdc56aa9e57fcf4f1c1) 18 September 2025 Anthony Legg - style: set `flex-col` on wrapper class
+
 - [`53ee6b4`](https://github.com/HaydenMCD/jog-journal/commit/53ee6b46c75da6cc82b5ded94a5de9a9ea27f631) 18 September 2025 Anthony Legg - build: update eslint config
 
 remove unused eslint plugins
