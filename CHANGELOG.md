@@ -99,6 +99,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`efa59c3`](https://github.com/HaydenMCD/jog-journal/commit/efa59c35a38c5d39c6851d5efae90106cceea485) 21 September 2025 Anthony Legg - create auth context hook/provider
+
 - [`88dd46d`](https://github.com/HaydenMCD/jog-journal/commit/88dd46d52ee9a43d5135268efc908b213c201650) 21 September 2025 Anthony Legg - refactor: __root.jsx create root with context
 
 - [`c24cca7`](https://github.com/HaydenMCD/jog-journal/commit/c24cca7bc8de9571add17bdc56aa9e57fcf4f1c1) 18 September 2025 Anthony Legg - style: set `flex-col` on wrapper class
