@@ -99,6 +99,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`c23628d`](https://github.com/HaydenMCD/jog-journal/commit/c23628dd8935928361b4fbd3922983dcb281b8a7) 21 September 2025 Anthony Legg - fix: correct env imports
+
 - [`efa59c3`](https://github.com/HaydenMCD/jog-journal/commit/efa59c35a38c5d39c6851d5efae90106cceea485) 21 September 2025 Anthony Legg - create auth context hook/provider
 
 - [`88dd46d`](https://github.com/HaydenMCD/jog-journal/commit/88dd46d52ee9a43d5135268efc908b213c201650) 21 September 2025 Anthony Legg - refactor: __root.jsx create root with context
