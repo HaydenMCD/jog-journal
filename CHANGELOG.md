@@ -100,6 +100,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`66e76e8`](https://github.com/HaydenMCD/jog-journal/commit/66e76e859790e16b45c83786d5f2be6c1d2adc3a) 21 September 2025 Anthony Legg - move auth hook to context directory
+
 - [`a684383`](https://github.com/HaydenMCD/jog-journal/commit/a68438331b906aea62e44d84fe7084304450132c) 21 September 2025 Anthony Legg - move auth hook to context directory
 
 - [`7ab69b9`](https://github.com/HaydenMCD/jog-journal/commit/7ab69b94e8ae5de7b1840c3980ee06d468f5e41b) 21 September 2025 Anthony Legg - revert: remove `useAuthProvider`
