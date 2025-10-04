@@ -84,6 +84,7 @@ add new post-commit
 
 ### Reverted
 
+- [`e790d5c`](https://github.com/HaydenMCD/jog-journal/commit/e790d5c4e2b02cb082d0de76e29a975a18d4960f) 4 October 2025 Anthony Legg - revert: add new/updated `useAuthContext`
 - [`7ab69b9`](https://github.com/HaydenMCD/jog-journal/commit/7ab69b94e8ae5de7b1840c3980ee06d468f5e41b) 21 September 2025 Anthony Legg - revert: remove `useAuthProvider`
 - [`3268c25`](https://github.com/HaydenMCD/jog-journal/commit/3268c25061500fb805ce0fc146a80ff60d8ecc95) 18 September 2025 Anthony Legg - revert:remove .eslint.json file
 - [`9bffbc5`](https://github.com/HaydenMCD/jog-journal/commit/9bffbc57930513617a5517db9ce1717df45c1ca4) 30 July 2025 Anthony Legg - revert: reinstate pre-commit hook to previous version
@@ -100,6 +101,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`e790d5c`](https://github.com/HaydenMCD/jog-journal/commit/e790d5c4e2b02cb082d0de76e29a975a18d4960f) 4 October 2025 Anthony Legg - revert: add new/updated `useAuthContext`
 
 - [`48b2f33`](https://github.com/HaydenMCD/jog-journal/commit/48b2f335de4f15b60533cc797dc4d3c5c2d51326) 4 October 2025 Anthony Legg - refactor: delete original `useAuthContext` hook
 
