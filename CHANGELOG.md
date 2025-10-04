@@ -20,6 +20,9 @@
 
 ### Refactored
 
+- [`162215e`](https://github.com/HaydenMCD/jog-journal/commit/162215e489b3288b2483362509db3c69a0513eac) 4 October 2025 Anthony Legg - refactor: delete distance context/provider
+
+combine file content in single tsx file
 - [`48b2f33`](https://github.com/HaydenMCD/jog-journal/commit/48b2f335de4f15b60533cc797dc4d3c5c2d51326) 4 October 2025 Anthony Legg - refactor: delete original `useAuthContext` hook
 - [`88dd46d`](https://github.com/HaydenMCD/jog-journal/commit/88dd46d52ee9a43d5135268efc908b213c201650) 21 September 2025 Anthony Legg - refactor: __root.jsx create root with context
 - [`3bfb441`](https://github.com/HaydenMCD/jog-journal/commit/3bfb441c6e5d6d7dd385013c973783e5eaa21bb0) 18 September 2025 Anthony Legg - refactor: `header.jsx` updated to use builtin env MODE key
@@ -101,6 +104,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`162215e`](https://github.com/HaydenMCD/jog-journal/commit/162215e489b3288b2483362509db3c69a0513eac) 4 October 2025 Anthony Legg - refactor: delete distance context/provider
+
+combine file content in single tsx file
 
 - [`c7ac5a6`](https://github.com/HaydenMCD/jog-journal/commit/c7ac5a690641e0420966df970413c9c92d055f44) 4 October 2025 Anthony Legg - build: add auth context to `__root.tsx` -m #8
 
