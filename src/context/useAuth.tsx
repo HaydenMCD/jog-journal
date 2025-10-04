@@ -6,42 +6,61 @@ import {
   useContext,
   ReactNode,
 } from 'react';
+
 import { flushSync } from 'react-dom';
 
+import type {
+  User,
+  AuthProvider,
+  UserInfo,
+  UserMetadata,
+  AuthError,
+  AuthErrorMap,
+  Auth,
+  UserCredential,
+  UserProfile,
+} from 'firebase/auth';
+
 import {
-  type User,
-  type AuthProvider,
-  type UserInfo,
-  type UserMetadata,
-  type AuthError,
-  type AuthErrorMap,
-  type Auth,
   onAuthStateChanged,
   signInWithPopup,
   User as FirebaseUser,
   signOut,
-  signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  SignInMethod,
+  updateCurrentUser,
+  updateProfile,
+  updatePassword,
+  confirmPasswordReset,
+  getAdditionalUserInfo,
   GoogleAuthProvider,
+  reauthenticateWithCredential,
   getIdToken,
   AuthErrorCodes,
+  deleteUser,
 } from 'firebase/auth';
 
 import { auth } from '../firebase';
 
-const AuthType = typeof auth;
-
 export type AuthContextType = {
   isAuthenticated: boolean;
   isInitialLoading: boolean;
-  login: (provider: AuthProvider) => Promise<void>;
+  providerLogin: (provider: AuthProvider) => Promise<void>;
+  emailPasswordLogin: (
+    auth: Auth,
+    email: string,
+    password: string
+  ) => Promise<void>;
   logout: () => Promise<void>;
   signUpWithEmailPassword: (
     email: string,
     password: string,
     confirmPassword: string
   ) => Promise<void>;
+  getUserProfile: () => Promise<UserProfile | null>;
   user: FirebaseUser | null;
+  profile: UserProfile | null;
 };
 
 const AuthContext = createContext<AuthContextType | null>(null);
@@ -68,7 +87,15 @@ export function AuthContextProvider({ children }: { children: ReactNode }) {
     setIsInitialLoading(false);
   }, []);
 
-  const login = useCallback(async (provider: AuthProvider) => {
+  const providerLogin = useCallback(async (provider: AuthProvider) => {
+    const result = await signInWithPopup(auth, provider);
+    flushSync(() => {
+      setUser(result.user);
+      setIsInitialLoading(false);
+    });
+  }, []);
+
+  const getUsersProfile = useCallback(async (provider: AuthProvider) => {
     const result = await signInWithPopup(auth, provider);
     flushSync(() => {
       setUser(result.user);
@@ -99,16 +126,16 @@ export function AuthContextProvider({ children }: { children: ReactNode }) {
         isInitialLoading,
         isAuthenticated,
         user,
-        login,
-        logout,
+        providerLogin,
         signUpWithEmailPassword,
+        logout,
       }}>
       {children}
     </AuthContext.Provider>
   );
 }
 
-export function useAuth() {
+export function useAuthContext() {
   const context = useContext(AuthContext);
   if (!context) {
     throw new Error('useAuth must be used within an AuthProvider');
