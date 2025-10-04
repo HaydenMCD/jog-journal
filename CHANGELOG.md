@@ -106,6 +106,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`03902c7`](https://github.com/HaydenMCD/jog-journal/commit/03902c79f8ec277e6869c9cfe57b72c300cc6823) 4 October 2025 Anthony Legg - update `useAuth` file name
+
+#8 rename login functions
+
 - [`86facbd`](https://github.com/HaydenMCD/jog-journal/commit/86facbd656bab25aa2eefaa0f99b25b3850097cb) 4 October 2025 Anthony Legg - refactor: update `__root.tsx` use distance context
 
 - [`162215e`](https://github.com/HaydenMCD/jog-journal/commit/162215e489b3288b2483362509db3c69a0513eac) 4 October 2025 Anthony Legg - refactor: delete distance context/provider
