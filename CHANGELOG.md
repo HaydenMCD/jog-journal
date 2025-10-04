@@ -102,6 +102,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`c7ac5a6`](https://github.com/HaydenMCD/jog-journal/commit/c7ac5a690641e0420966df970413c9c92d055f44) 4 October 2025 Anthony Legg - build: add auth context to `__root.tsx` -m #8
+
 - [`e790d5c`](https://github.com/HaydenMCD/jog-journal/commit/e790d5c4e2b02cb082d0de76e29a975a18d4960f) 4 October 2025 Anthony Legg - revert: add new/updated `useAuthContext`
 
 - [`48b2f33`](https://github.com/HaydenMCD/jog-journal/commit/48b2f335de4f15b60533cc797dc4d3c5c2d51326) 4 October 2025 Anthony Legg - refactor: delete original `useAuthContext` hook
