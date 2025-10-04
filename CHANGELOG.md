@@ -106,6 +106,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`2e4067d`](https://github.com/HaydenMCD/jog-journal/commit/2e4067d2116cb900e3e838e8eb8ad4a2c5813c8f) 4 October 2025 Anthony Legg - #8 combine distance context hooks previously deleted
+
+in a new file
+
 - [`03902c7`](https://github.com/HaydenMCD/jog-journal/commit/03902c79f8ec277e6869c9cfe57b72c300cc6823) 4 October 2025 Anthony Legg - update `useAuth` file name
 
 #8 rename login functions
