@@ -106,6 +106,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`af21700`](https://github.com/HaydenMCD/jog-journal/commit/af217007dc83f60cc95daa143fc8ee9dd4fc9bbd) 4 October 2025 Anthony Legg - #8 delete `app.tsx` file no longer needed
+
 - [`ca8d79a`](https://github.com/HaydenMCD/jog-journal/commit/ca8d79ac5a6c0ef991f466d32e7d144fce71aac8) 4 October 2025 Anthony Legg - #8 delete `main.jsx`
 
 switched to .tsx to enable context hooks to be used by tanstack router
