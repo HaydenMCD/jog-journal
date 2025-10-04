@@ -19,6 +19,7 @@ import type {
   Auth,
   UserCredential,
   UserProfile,
+  AdditionalUserInfo,
 } from 'firebase/auth';
 
 import {
@@ -47,26 +48,25 @@ export type AuthContextType = {
   isAuthenticated: boolean;
   isInitialLoading: boolean;
   providerLogin: (provider: AuthProvider) => Promise<void>;
-  emailPasswordLogin: (
-    auth: Auth,
-    email: string,
-    password: string
-  ) => Promise<void>;
+  userEmailPasswordLogin: (email: string, password: string) => Promise<void>;
   logout: () => Promise<void>;
   signUpWithEmailPassword: (
     email: string,
     password: string,
     confirmPassword: string
   ) => Promise<void>;
-  getUserProfile: () => Promise<UserProfile | null>;
+  getUserProfile: (userCredential: UserCredential) => Promise<void>;
   user: FirebaseUser | null;
-  profile: UserProfile | null;
+  userProfile: AdditionalUserInfo | null;
 };
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
 export function AuthContextProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(auth.currentUser);
+  const [userProfile, setUserProfile] = useState<AdditionalUserInfo | null>(
+    null
+  );
   const [isInitialLoading, setIsInitialLoading] = useState(true);
   const isAuthenticated = !!user;
 
@@ -95,10 +95,26 @@ export function AuthContextProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
-  const getUsersProfile = useCallback(async (provider: AuthProvider) => {
-    const result = await signInWithPopup(auth, provider);
+  const userEmailPasswordLogin = useCallback(
+    async (email: string, password: string) => {
+      const result = await signInWithEmailAndPassword(auth, email, password);
+      flushSync(() => {
+        setUser(result.user);
+        setIsInitialLoading(false);
+      });
+    },
+    []
+  );
+
+  const getUserProfile = useCallback(async (userCredential: UserCredential) => {
+    const result = await getAdditionalUserInfo(userCredential);
     flushSync(() => {
-      setUser(result.user);
+      if (result !== null) {
+        setUserProfile(result);
+      } else {
+        // handle an error
+        setUserProfile(null);
+      }
       setIsInitialLoading(false);
     });
   }, []);
@@ -126,9 +142,12 @@ export function AuthContextProvider({ children }: { children: ReactNode }) {
         isInitialLoading,
         isAuthenticated,
         user,
+        userProfile,
         providerLogin,
+        userEmailPasswordLogin,
         signUpWithEmailPassword,
         logout,
+        getUserProfile,
       }}>
       {children}
     </AuthContext.Provider>
