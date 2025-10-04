@@ -20,6 +20,7 @@
 
 ### Refactored
 
+- [`48b2f33`](https://github.com/HaydenMCD/jog-journal/commit/48b2f335de4f15b60533cc797dc4d3c5c2d51326) 4 October 2025 Anthony Legg - refactor: delete original `useAuthContext` hook
 - [`88dd46d`](https://github.com/HaydenMCD/jog-journal/commit/88dd46d52ee9a43d5135268efc908b213c201650) 21 September 2025 Anthony Legg - refactor: __root.jsx create root with context
 - [`3bfb441`](https://github.com/HaydenMCD/jog-journal/commit/3bfb441c6e5d6d7dd385013c973783e5eaa21bb0) 18 September 2025 Anthony Legg - refactor: `header.jsx` updated to use builtin env MODE key
 - [`365d0dd`](https://github.com/HaydenMCD/jog-journal/commit/365d0ddaff7baf0b49f05725d6409ffae65f8a35) 18 September 2025 Anthony Legg - refactor: .env* updated
@@ -99,6 +100,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 - [`f67e716`](https://github.com/HaydenMCD/jog-journal/commit/f67e7169c6c1fcf2a88aa1759a2ccebc73376e4d) 9 July 2025 Anthony Legg - #8 revert: remove previous node packages
 
 ## Commits :heavy_check_mark:
+
+- [`48b2f33`](https://github.com/HaydenMCD/jog-journal/commit/48b2f335de4f15b60533cc797dc4d3c5c2d51326) 4 October 2025 Anthony Legg - refactor: delete original `useAuthContext` hook
 
 - [`66e76e8`](https://github.com/HaydenMCD/jog-journal/commit/66e76e859790e16b45c83786d5f2be6c1d2adc3a) 21 September 2025 Anthony Legg - move auth hook to context directory
 

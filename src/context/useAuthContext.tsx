@@ -9,21 +9,39 @@ import {
 import { flushSync } from 'react-dom';
 
 import {
-  onAuthStateChanged,
   type User,
   type AuthProvider,
+  type UserInfo,
+  type UserMetadata,
+  type AuthError,
+  type AuthErrorMap,
+  type Auth,
+  onAuthStateChanged,
   signInWithPopup,
+  User as FirebaseUser,
   signOut,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  getIdToken,
+  AuthErrorCodes,
 } from 'firebase/auth';
 
 import { auth } from '../firebase';
+
+const AuthType = typeof auth;
 
 export type AuthContextType = {
   isAuthenticated: boolean;
   isInitialLoading: boolean;
   login: (provider: AuthProvider) => Promise<void>;
   logout: () => Promise<void>;
-  user: User | null;
+  signUpWithEmailPassword: (
+    email: string,
+    password: string,
+    confirmPassword: string
+  ) => Promise<void>;
+  user: FirebaseUser | null;
 };
 
 const AuthContext = createContext<AuthContextType | null>(null);
@@ -58,9 +76,33 @@ export function AuthContextProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
+  const signUpWithEmailPassword = useCallback(
+    async (email: string, password: string, confirmPassword: string) => {
+      // check the confirm password field matches the password
+      // confirm the user email is not in use
+      const result = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      flushSync(() => {
+        setUser(result.user);
+        setIsInitialLoading(false);
+      });
+    },
+    []
+  );
+
   return (
     <AuthContext.Provider
-      value={{ isInitialLoading, isAuthenticated, user, login, logout }}>
+      value={{
+        isInitialLoading,
+        isAuthenticated,
+        user,
+        login,
+        logout,
+        signUpWithEmailPassword,
+      }}>
       {children}
     </AuthContext.Provider>
   );
