@@ -106,6 +106,8 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`1cb9854`](https://github.com/HaydenMCD/jog-journal/commit/1cb985485ab69635e9d5977d16451db63a7fa6da) 4 October 2025 Anthony Legg - #8 add additional state, functions to `useAuth` hook
+
 - [`5287c1b`](https://github.com/HaydenMCD/jog-journal/commit/5287c1bee935b866c0b7721db50f3f364c3cdb94) 4 October 2025 Anthony Legg - create utils.ts file for util functions
 
 - [`af21700`](https://github.com/HaydenMCD/jog-journal/commit/af217007dc83f60cc95daa143fc8ee9dd4fc9bbd) 4 October 2025 Anthony Legg - #8 delete `app.tsx` file no longer needed
