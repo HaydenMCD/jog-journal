@@ -106,6 +106,10 @@ Signed-off-by: Anthony Legg &lt;anthony.legg@outlook.com&gt;
 
 ## Commits :heavy_check_mark:
 
+- [`ca8d79a`](https://github.com/HaydenMCD/jog-journal/commit/ca8d79ac5a6c0ef991f466d32e7d144fce71aac8) 4 October 2025 Anthony Legg - #8 delete `main.jsx`
+
+switched to .tsx to enable context hooks to be used by tanstack router
+
 - [`2e4067d`](https://github.com/HaydenMCD/jog-journal/commit/2e4067d2116cb900e3e838e8eb8ad4a2c5813c8f) 4 October 2025 Anthony Legg - #8 combine distance context hooks previously deleted
 
 in a new file
