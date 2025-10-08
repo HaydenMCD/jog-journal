@@ -5,31 +5,41 @@ import {
   createContext,
   useContext,
   ReactNode,
+  useEffect,
 } from 'react';
 
-import { DISTANCE_TYPES } from '../utils/constants';
+import { flushSync } from 'react-dom';
+
+import { DISTANCE_CONSTS, DISTANCE_TYPE } from '../utils/constants';
 
 export type DistanceContextType = {
   isInitialLoading: boolean;
+  kilometersOn: boolean;
+  distanceType: DISTANCE_TYPE;
+  toggleKilometers: () => void;
 };
 
+const DistanceContext = createContext<DistanceContextType | null>(null);
+
 export function DistanceProvider({ children }: { children: ReactNode }) {
+  const [isInitialLoading, setIsInitialLoading] = useState(true);
   const [kilometersOn, setKilometersOn] = useState(true);
-  const [distanceType, setDistanceType] = useState(
-    DISTANCE_TYPES.KILOMETERS.NAME
+  const [distanceType, setDistanceType] = useState<DISTANCE_TYPE>(
+    DISTANCE_CONSTS.KILOMETERS
   );
 
   const toggleKilometers = useCallback(() => {
     setKilometersOn((prev) => !prev);
     setDistanceType((prev) =>
-      prev === DISTANCE_TYPES.KILOMETERS.NAME
-        ? DISTANCE_TYPES.MILES.NAME
-        : DISTANCE_TYPES.KILOMETERS.NAME
+      prev === DISTANCE_CONSTS.KILOMETERS
+        ? DISTANCE_CONSTS.MILES
+        : DISTANCE_CONSTS.KILOMETERS
     );
   }, []);
 
   const value = useMemo(
     () => ({
+      isInitialLoading,
       kilometersOn,
       distanceType,
       toggleKilometers,
@@ -43,12 +53,6 @@ export function DistanceProvider({ children }: { children: ReactNode }) {
     </DistanceContext.Provider>
   );
 }
-
-const DistanceContext = createContext({
-  kilometersOn: true,
-  distanceType: DISTANCE_TYPES.KILOMETERS.NAME,
-  toggleKilometers: () => {},
-});
 
 export function useDistanceContext() {
   const context = useContext(DistanceContext);
