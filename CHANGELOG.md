@@ -48,6 +48,10 @@ add new post-commit
 
 ## Commits :heavy_check_mark:
 
+- [`86a9772`](https://github.com/HaydenMCD/jog-journal/commit/86a9772b07f5b97d3b30185cae67bd99dcfe9f7a) 19 November 2025 Anthony Legg - #55 update package.json config
+
+install `npx` package to run prettier, husky and lint-staged packages locally
+
 - [`6c2bb6d`](https://github.com/HaydenMCD/jog-journal/commit/6c2bb6d192ddae7b275137807ace67f54e93c31e) 19 November 2025 Anthony Legg - #55 combine husky hooks
 
 remove post commit script
