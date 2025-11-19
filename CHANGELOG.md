@@ -48,6 +48,8 @@ add new post-commit
 
 ## Commits :heavy_check_mark:
 
+- [`f03dbdf`](https://github.com/HaydenMCD/jog-journal/commit/f03dbdf13f9d03f0a03e00c3788a0bc36bb34d09) 19 November 2025 Anthony Legg - #55 add `.npmrc` set legacy-peer-deps as default
+
 - [`1cea097`](https://github.com/HaydenMCD/jog-journal/commit/1cea097f1424a9554051055fc2a4df913e0c0553) 2 July 2025 Anthony Legg - Merge PR #51 from 11-bug-cannot-type-in-kilometer-input
 
 ## Completed
