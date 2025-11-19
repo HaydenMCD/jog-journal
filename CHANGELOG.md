@@ -24,6 +24,18 @@
 
 ### Bug Fixes
 
+- [`1cea097`](https://github.com/HaydenMCD/jog-journal/commit/1cea097f1424a9554051055fc2a4df913e0c0553) 2 July 2025 Anthony Legg - Merge PR #51 from 11-bug-cannot-type-in-kilometer-input
+
+## Completed
+
+1. created constants for increment/decrement steps and for decimal place numbers
+2. prevented users getting to negative number values #18 
+3. converted the text input back to a number input
+- added additional css to the body tag in `app.css` to prevent the default number input displaying increment/decrement buttons.
+
+## Additional fix
+
+1. updated husky pre-commit hook by removing the `&& git add .` so that files not meant to be committed are not added automatically. 
 - [`6b31536`](https://github.com/HaydenMCD/jog-journal/commit/6b31536904a43755555f99370dbe44af429282c8) 28 June 2025 Anthony Legg - #33 bug: fix husky commit scripts
 
 update new post-commit so that it only handles changelog 
@@ -35,6 +47,23 @@ add new post-commit
 
 
 ## Commits :heavy_check_mark:
+
+- [`1cea097`](https://github.com/HaydenMCD/jog-journal/commit/1cea097f1424a9554051055fc2a4df913e0c0553) 2 July 2025 Anthony Legg - Merge PR #51 from 11-bug-cannot-type-in-kilometer-input
+
+## Completed
+
+1. created constants for increment/decrement steps and for decimal place numbers
+2. prevented users getting to negative number values #18 
+3. converted the text input back to a number input
+- added additional css to the body tag in `app.css` to prevent the default number input displaying increment/decrement buttons.
+
+## Additional fix
+
+1. updated husky pre-commit hook by removing the `&& git add .` so that files not meant to be committed are not added automatically.
+
+- [`2cd61a2`](https://github.com/HaydenMCD/jog-journal/commit/2cd61a25962a0ed8fbcda4237b3cbe77ee30b4c3) 28 June 2025 Anthony Legg - #33 update changelog template
+
+put output on single lines
 
 - [`6b31536`](https://github.com/HaydenMCD/jog-journal/commit/6b31536904a43755555f99370dbe44af429282c8) 28 June 2025 Anthony Legg - #33 bug: fix husky commit scripts
 
@@ -55,6 +84,18 @@ add `git add changelog.md` command
 - [`0b92dba`](https://github.com/HaydenMCD/jog-journal/commit/0b92dba28272ae5b2703e51f7f00dc3f724172f9) 28 June 2025 Anthony Legg - #33 undo: remove cz-conventional-changelog dev dep
 
 - [`49ee4ed`](https://github.com/HaydenMCD/jog-journal/commit/49ee4ed8242011617277e58d747a576e475126c8) 28 June 2025 Anthony Legg - #33 install auto changelog dev deps
+
+- [`de3a1e0`](https://github.com/HaydenMCD/jog-journal/commit/de3a1e08082c01a159b15c1456e25e23472d387d) 27 June 2025 Anthony Legg - #11 update `kilometerinput.jsx` and constants.js
+
+create constant for increment/decrement steps
+
+- [`5064d21`](https://github.com/HaydenMCD/jog-journal/commit/5064d21951692a411797e209b6e4e9e93bad3231) 27 June 2025 Anthony Legg - #11 update `kilometerinput.jsx` so that it can be written to by
+
+keyboard input and does not go into negative digits. Added two decimal places that can be added to by keyboard input
+
+- [`95cdec5`](https://github.com/HaydenMCD/jog-journal/commit/95cdec58b9fd542632d4fffe50d12a4f494a2f8e) 27 June 2025 Anthony Legg - #11 update app.css to prevent number input having inbuilt increment/decrement buttons
+
+- [`dd4f9bf`](https://github.com/HaydenMCD/jog-journal/commit/dd4f9bf945bcfbcafbec152615b604895a8b5966) 27 June 2025 Anthony Legg - #11 create fixed decimal point constant to use globally
 
 - [`c6b8ed8`](https://github.com/HaydenMCD/jog-journal/commit/c6b8ed8654e44ef5d042472e8ed3f6aaa003b19a) 25 June 2025 Anthony Legg - Merge PR #49 from 39-install-and-configure-lint-staged-package
 
