@@ -48,6 +48,8 @@ add new post-commit
 
 ## Commits :heavy_check_mark:
 
+- [`09692de`](https://github.com/HaydenMCD/jog-journal/commit/09692de39106c1cb54a0e4464e9af3ab66ccfa67) 19 November 2025 Anthony Legg - #55 rename example env file
+
 - [`1bcf18f`](https://github.com/HaydenMCD/jog-journal/commit/1bcf18f349c2a2976bfb589f308e97ed6c7f03ea) 19 November 2025 Anthony Legg - #55 add `.nvmrc` file
 
 set node version to 22.14.0 as default
