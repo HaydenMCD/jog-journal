@@ -48,6 +48,10 @@ add new post-commit
 
 ## Commits :heavy_check_mark:
 
+- [`1bcf18f`](https://github.com/HaydenMCD/jog-journal/commit/1bcf18f349c2a2976bfb589f308e97ed6c7f03ea) 19 November 2025 Anthony Legg - #55 add `.nvmrc` file
+
+set node version to 22.14.0 as default
+
 - [`9e80ac1`](https://github.com/HaydenMCD/jog-journal/commit/9e80ac1387f1e794fae7391aecd6f9e3196c58b3) 19 November 2025 Anthony Legg - #55 resolve package security warnings
 
 - [`86a9772`](https://github.com/HaydenMCD/jog-journal/commit/86a9772b07f5b97d3b30185cae67bd99dcfe9f7a) 19 November 2025 Anthony Legg - #55 update package.json config
