@@ -1,6 +1,13 @@
+@import 'tailwindcss';
+@import './constants.css';
+
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
 .tracker-wrapper {
-  min-width: 67%;
+  @apply flex min-w-2/3 flex-col items-center;
+  /* min-width: 67%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }

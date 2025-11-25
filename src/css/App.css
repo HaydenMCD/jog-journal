@@ -1,8 +1,37 @@
-.wrapper {
-    width: 100%;
-    display: flex;
-}
+@import 'tailwindcss';
+@import './constants.css';
+
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
 
 body {
-    background-color: #2222;
+  @apply dark:bg-body-dark-mode bg-body-light-mode dark:text-dark-mode text-light-mode;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 0.3125rem 0.625rem;
+  margin: 0 0.3125rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--bg-btn);
+  color: var(--text-dark);
+}
+
+button:active {
+  background-color: var(--bg-btn-active);
+}
+
+.wrapper {
+  @apply flex w-full;
 }

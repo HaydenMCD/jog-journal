@@ -6,50 +6,60 @@
   "private": true,
   "license": "MIT",
   "engines": {
-    "node": ">=22.0.0",
-    "npm": ">=11.0.0"
+    "node": ">=22.14.0",
+    "npm": ">=11.6.0"
   },
   "scripts": {
     "dev": "vite --port 3000",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky",
+    "log": "auto-changelog --sort-commits date-desc --release-summary --output CHANGELOG.md --template changelog-template.hbs"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.8",
     "firebase": "^11.6.1",
     "firebase-hooks": "^0.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.8",
     "zod": "^3.24.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
+    "auto-changelog": "^2.5.0",
     "eslint": "^9.25.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.12",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
     "vite": "^6.3.5"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,css,sh,mjs,json}": [
+      "npx prettier --config .prettierrc --write"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "changelog-template.hbs",
+    "unreleased": true,
+    "commitLimit": false
   }
 }

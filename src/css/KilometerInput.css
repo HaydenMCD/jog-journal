@@ -1,51 +1,49 @@
+@import 'tailwindcss';
+@import './constants.css';
+
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
 .kilometerContainer {
-  width: 45%;
-  padding: 10px;
+  /* width: 45%;
+  width: 0.021875vw;
+  padding: 0.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10vh;
-  gap: 50px;
+  padding-top: 6.75rem;
+  /* converted gap to rem unit */
+  /* gap: 50px; */
+  /* gap: 3.125rem; */
+  @apply flex w-2/5 flex-col items-center gap-[3.125rem] p-2.5 pt-[6.75rem];
 }
 
 .inputTitle {
-  font-size: 34px;
-  margin: 0;
-  padding-bottom: 100px;
+  /* font-size: 4.25ch; */
+  /* margin: 0; */
+  /* padding-bottom: 100px; */
+  /* padding-bottom: 6.25rem; */
+  @apply m-0 pb-24 text-4xl;
 }
 
 .counterInput {
-  width: 200px;
-  text-align: center;
-  font-size: 1.2rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 5px;
+  /* width: 12.5rem; */
+  /* text-align: center; */
+  /* font-size: 1.2rem; */
+  /* border: 1px solid var(--input-border-dark); */
+  /* border-radius: 4px; */
+  /* padding: 0.3125rem; */
+  /* color: black; */
+  @apply dark:border-input-border-dark-mode border-input-border-light-mode w-48 rounded-sm border p-1.5 text-center text-xl text-black;
 }
 
 button {
-  font-size: 1.2rem;
-  padding: 5px 10px;
-  margin: 0 5px 0 5px;
-  cursor: pointer;
-  border: none;
   border-radius: 4px;
-  background-color: #00c7c763;
-  color: white;
-  min-width: 32px;
-}
-
-button:active {
-  background-color: #00bebea9;
+  min-width: 4ch;
 }
 
 .submitButton {
-  margin-top: 10px;
-  background-color: #00c7c763;
-  width: 250px;
-  padding: 10px;
-}
-
-.submitButton:active {
-  background-color: #00bebea9;
+  margin-top: 0.625rem;
+  width: 15.625rem;
+  padding: 0.625rem;
 }

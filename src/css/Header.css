@@ -1,21 +1,17 @@
+@import 'tailwindcss';
+@import './constants.css';
+
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
 .header-wrapper {
-  display: flex;
-  background-color: #474747;
-  color: white;
-  justify-content: space-between;
-  height: 8vh;
-  width: 100%;
+  @apply dark:bg-header-dark-mode bg-header-light-mode flex w-full justify-between space-y-4 px-6;
 }
 
 .title {
-  font-size: 44px;
-  margin: 0;
-  padding-left: 1.5vw;
+  font-size: 5.5ch;
 }
 
 .slogan {
-  font-size: 18px;
-  position: relative;
-  transform: translateY(20%);
-  padding-right: 2vw;
+  font-size: 2.25ch;
 }

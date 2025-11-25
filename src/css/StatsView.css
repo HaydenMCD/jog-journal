@@ -1,28 +1,35 @@
+@import 'tailwindcss';
+@import './constants.css';
+
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
 .stats-wrapper {
-  width: 60%;
+  @apply flex w-3/5 flex-col items-center-safe;
+  /* width: 60%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 
 /* CSS for progress bar placeholder from the ProgressBar component */
 .progress-placeholder {
-  margin-top: 50px;
-  min-width: 300px;
-  min-height: 300px;
-  background-color: red;
+  @apply mt-[3.125rem] flex min-h-[18.75rem] min-w-[18.75rem] flex-col items-center justify-center rounded-full bg-[var(--bg-progress-bar)];
+  /* margin-top: 3.125rem;
+  min-width: 18.75rem;
+  min-height: 18.75rem;
+  background-color: var(--bg-progress-bar);
   border-radius: 50%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .stats-grid {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, auto);
-  gap: 10px 50px;
+  gap: 0.625rem 3.125rem;
 }
