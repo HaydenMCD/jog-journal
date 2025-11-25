@@ -6,8 +6,8 @@
   "private": true,
   "license": "MIT",
   "engines": {
-    "node": ">=22.0.0",
-    "npm": ">=11.0.0"
+    "node": ">=22.14.0",
+    "npm": ">=11.6.0"
   },
   "scripts": {
     "dev": "vite --port 3000",
@@ -42,13 +42,9 @@
     "lint-staged": "^16.1.2",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.12",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
     "vite": "^6.3.5"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "husky": {
     "hooks": {
@@ -56,7 +52,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx,css,sh,*rc,mjs,json}": [
+    "*.{ts,tsx,js,jsx,css,sh,mjs,json}": [
       "npx prettier --config .prettierrc --write"
     ]
   },
